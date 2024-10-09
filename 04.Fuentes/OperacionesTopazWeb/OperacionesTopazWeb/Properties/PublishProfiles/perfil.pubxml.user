@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\gpadillab\Desktop\LocalPubish\OperacionesTopaz</_PublishTargetUrl>
+    <History>True|2024-10-03T19:38:11.7255790Z;True|2024-10-03T14:37:55.3990349-05:00;True|2024-10-03T14:14:44.8197085-05:00;True|2024-10-03T12:32:35.8380736-05:00;True|2024-09-30T14:29:24.3279734-05:00;True|2024-09-30T12:30:48.0513065-05:00;True|2024-09-30T12:30:32.6752479-05:00;True|2024-03-13T11:45:09.2327406-05:00;True|2024-03-12T17:46:50.7029781-05:00;True|2024-02-15T16:49:25.3132650-05:00;True|2024-02-15T16:49:10.9197632-05:00;True|2024-02-15T16:47:14.5627390-05:00;True|2024-02-15T16:07:19.8699256-05:00;True|2024-02-08T17:25:47.2658062-05:00;True|2023-11-15T09:40:10.9271525-05:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>02/15/2024 16:49:23</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>02/15/2024 16:49:23</publishTime>
+    </File>
+    <File Include="bin/es/System.Net.Http.Formatting.resources.dll">
+      <publishTime>11/28/2018 08:00:46</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.WebHost.resources.dll">
+      <publishTime>11/28/2018 08:03:04</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Mvc.resources.dll">
+      <publishTime>10/01/2013 15:55:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/16/2023 16:59:42</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/28/2016 14:22:24</publishTime>
+    </File>
+    <File Include="bin/OperacionesTopazWeb.dll">
+      <publishTime>10/03/2024 14:37:54</publishTime>
+    </File>
+    <File Include="bin/OperacionesTopazWeb.pdb">
+      <publishTime>10/03/2024 14:37:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/SecurityCrk.dll">
+      <publishTime>05/03/2023 17:31:51</publishTime>
+    </File>
+    <File Include="bin/SeguridadCrkWCF.dll">
+      <publishTime>05/03/2023 17:31:51</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 08:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/01/2013 15:54:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>10/16/2023 16:59:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 08:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/28/2018 08:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/28/2018 08:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/28/2018 08:04:24</publishTime>
+    </File>
+    <File Include="bin/UtilitarioCrk.dll">
+      <publishTime>10/16/2023 16:58:55</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>10/16/2023 16:59:42</publishTime>
+    </File>
+    <File Include="Content/css/flexselect.css">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/css/IndexProspeccion.css">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/css/ListaProductoAhorro.css">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/css/pro.reporte.css">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/css/pro.reportes.css">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/css/ReporteBase.css">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/css/Reportes.css">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/css/TabsSolicitud.css">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/js/Condiciones/bandeja.js">
+      <publishTime>11/13/2023 11:18:43</publishTime>
+    </File>
+    <File Include="Content/js/Condiciones/BandejaCondicionalCV.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/js/Condiciones/CondicionCV.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/js/Condiciones/detalle1.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/js/Condiciones/detalle2.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/js/Condiciones/detalleCreditosVencidos.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/js/Condiciones/ListarOrdenProductoAhorros.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/js/Corresponsalia/BancoDeCredito.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Content/js/Corresponsalia/CajaArequipa.js">
+      <publishTime>10/03/2024 14:31:48</publishTime>
+    </File>
+    <File Include="Content/js/Corresponsalia/CreditosVencidos.js">
+      <publishTime>09/30/2024 10:50:21</publishTime>
+    </File>
+    <File Include="Content/js/Reportes/AfectacionesMasivas.js">
+      <publishTime>03/12/2024 16:23:59</publishTime>
+    </File>
+    <File Include="Content/js/Reportes/Pago.js">
+      <publishTime>11/07/2023 09:50:55</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="fonts/OpenSans-Light.woff">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="fonts/OpenSans-Regular.woff">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="fonts/OpenSans-Semibold.woff">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Images/blankSpace.png">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Images/Credinka.png">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Images/Excel.gif">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Images/uiTabsArrow.png">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/12/2024 16:52:00</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>02/15/2024 16:49:21</publishTime>
+    </File>
+    <File Include="Properties/DataSources/UtilitarioCrk.wsSeguridad.EnMenu.datasource">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Properties/DataSources/UtilitarioCrk.wsSeguridad.EnModulo.datasource">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Properties/DataSources/UtilitarioCrk.wsSeguridad.EnUsuario.datasource">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jqChosen/css/jquery.chosen.css">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jqChosen/img/bg-right.png">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jqChosen/img/chosen-sprite.png">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jqChosen/js/jquery.chosen.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/css/jquery.jqplot.css">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/css/jquery.jqplot.min.css">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/jquery.dataTables.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/jquery.table.marge.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/js/jqplot.barRenderer.min.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/js/jqplot.canvasAxisTickRenderer.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/js/jqplot.canvasTextRenderer.min.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/js/jqplot.categoryAxisRenderer.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/js/jqplot.pointLabels.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jqPlot/jsAjax.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.dataTables.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.dropdown.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.flexselect.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.session.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.3.0.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.3.0.min.js">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.4.1.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.4.1.min.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.table.marge.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/jsAjax.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/liquidmetal.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Scripts/popover.js">
+      <publishTime>10/16/2023 16:59:39</publishTime>
+    </File>
+    <File Include="Service References/wsCondicion/OperacionesTopazWeb.wsCondicion.EnCarteraProductoAhorroOrden.datasource">
+      <publishTime>12/06/2023 11:05:27</publishTime>
+    </File>
+    <File Include="Service References/wsCondicion/OperacionesTopazWeb.wsCondicion.EnCondicion.datasource">
+      <publishTime>12/06/2023 11:05:27</publishTime>
+    </File>
+    <File Include="Service References/wsCondicion/OperacionesTopazWeb.wsCondicion.EnProducto.datasource">
+      <publishTime>12/06/2023 11:05:27</publishTime>
+    </File>
+    <File Include="Service References/wsGestion/OperacionesTopazWeb.wsGestion.EnAfectacionesMasivasReporteCabecera.datasource">
+      <publishTime>10/03/2024 11:33:51</publishTime>
+    </File>
+    <File Include="Service References/wsGestion/OperacionesTopazWeb.wsGestion.EnCorresponsalia.datasource">
+      <publishTime>10/03/2024 11:33:51</publishTime>
+    </File>
+    <File Include="Service References/wsGestion/OperacionesTopazWeb.wsGestion.EnCorresponsaliaDescargarPagos.datasource">
+      <publishTime>10/03/2024 11:33:51</publishTime>
+    </File>
+    <File Include="Service References/wsGestion/OperacionesTopazWeb.wsGestion.EnExportarDeudasCA.datasource">
+      <publishTime>10/03/2024 11:33:51</publishTime>
+    </File>
+    <File Include="Service References/wsSeguridad/OperacionesTopazWeb.wsSeguridad.EnBloqueoUsuarioWAPI.datasource">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Service References/wsSeguridad/OperacionesTopazWeb.wsSeguridad.EnUsuarioWAPI.datasource">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Service References/wsUsuario/OperacionesTopazWeb.wsUsuario.EnBloqueoUsuario.datasource">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Service References/wsUsuario/OperacionesTopazWeb.wsUsuario.EnOficina.datasource">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Service References/wsUsuario/OperacionesTopazWeb.wsUsuario.EnPerfil.datasource">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Accesos/AccesoDenegado.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Accesos/Error.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Accesos/TimeOut.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Configuracion/Bandeja.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Configuracion/BandejaCreditoVencidos.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Configuracion/BandejaCV.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Configuracion/Condicion CV.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Configuracion/Detalle1.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Configuracion/Detalle2.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Configuracion/DetalleCreditoVencidos.cshtml">
+      <publishTime>10/25/2023 11:31:15</publishTime>
+    </File>
+    <File Include="Views/Configuracion/ListaProductoAhorro.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Corresponsalia/BancoDeCredito.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Corresponsalia/CajaArequipa.cshtml">
+      <publishTime>10/02/2024 10:46:50</publishTime>
+    </File>
+    <File Include="Views/Corresponsalia/CreditosVencidos.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Operaciones/Index.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Reportes/AfectacionesMasivas.cshtml">
+      <publishTime>03/12/2024 16:23:59</publishTime>
+    </File>
+    <File Include="Views/Reportes/Pago.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Reportes/View.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Shared/AccesoDenegado.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>10/16/2023 16:59:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/03/2024 14:14:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

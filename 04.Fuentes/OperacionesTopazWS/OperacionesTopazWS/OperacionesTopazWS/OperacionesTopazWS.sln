@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperacionesTopazWS", "OperacionesTopazWS\OperacionesTopazWS.csproj", "{70528AC5-FA49-419B-A47B-A9444D2ADB08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperacionesTopazAD", "OperacionesTopazAD\OperacionesTopazAD.csproj", "{11D17986-788C-4CA7-84E4-CD20AF647A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperacionesTopazRN", "OperacionesTopazRN\OperacionesTopazRN.csproj", "{4DDE0394-64D2-4C01-922E-D91403464F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelitesEN", "..\..\..\..\SatelitesEN\SatelitesEN\SatelitesEN.csproj", "{51C051EE-84C9-4520-A460-A3A41333BD10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70528AC5-FA49-419B-A47B-A9444D2ADB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70528AC5-FA49-419B-A47B-A9444D2ADB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70528AC5-FA49-419B-A47B-A9444D2ADB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70528AC5-FA49-419B-A47B-A9444D2ADB08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D17986-788C-4CA7-84E4-CD20AF647A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D17986-788C-4CA7-84E4-CD20AF647A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D17986-788C-4CA7-84E4-CD20AF647A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D17986-788C-4CA7-84E4-CD20AF647A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDE0394-64D2-4C01-922E-D91403464F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDE0394-64D2-4C01-922E-D91403464F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDE0394-64D2-4C01-922E-D91403464F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDE0394-64D2-4C01-922E-D91403464F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C051EE-84C9-4520-A460-A3A41333BD10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C051EE-84C9-4520-A460-A3A41333BD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C051EE-84C9-4520-A460-A3A41333BD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C051EE-84C9-4520-A460-A3A41333BD10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F6EB163-5B99-42F7-9B7C-02746450DA9A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfundation:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OperacionesTopazWS\\OperacionesTopazWS.csproj
+		SccProjectName1 = OperacionesTopazWS
+		SccLocalPath1 = OperacionesTopazWS
+		SccProjectUniqueName2 = OperacionesTopazAD\\OperacionesTopazAD.csproj
+		SccProjectName2 = OperacionesTopazAD
+		SccLocalPath2 = OperacionesTopazAD
+		SccProjectUniqueName3 = OperacionesTopazRN\\OperacionesTopazRN.csproj
+		SccProjectName3 = OperacionesTopazRN
+		SccLocalPath3 = OperacionesTopazRN
+		SccProjectUniqueName4 = ..\\..\\..\\..\\SatelitesEN\\SatelitesEN\\SatelitesEN.csproj
+		SccProjectName4 = ../../../../SatelitesEN/SatelitesEN
+		SccLocalPath4 = ..\\..\\..\\..\\SatelitesEN\\SatelitesEN
+	EndGlobalSection
+EndGlobal

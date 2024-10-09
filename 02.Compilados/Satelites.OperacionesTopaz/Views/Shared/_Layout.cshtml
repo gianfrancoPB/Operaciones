@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Ayni | Operaciones Topaz  </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="@ViewBag.vRuta/css/credinka-base.css" rel="stylesheet" />
+    <link href="@ViewBag.vRuta/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="@ViewBag.vRuta/css/jquery-ui.css" rel="stylesheet" />
+
+    <!-- Script -->
+    <script src="@ViewBag.vRuta/js/jquery-2.1.1.js"></script>
+    <script src="@ViewBag.vRuta/js/jquery-ui.js"></script>
+    <script src="@ViewBag.vRuta/js/jquery.mask.js"></script>
+    <script src="@ViewBag.vRuta/js/jquery.number.js"></script>
+    <script src="@ViewBag.vRuta/js/jsBase.js" charset="UTF-8"></script>
+
+    <script src="~/Scripts/jquery.dataTables.js"></script>
+    <script src="~/Scripts/jsAjax.js"></script>
+    <link href="~/Content/css/flexselect.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        var VG_RUTA_SERVIDOR = "@Url.Content("~")";
+        var VG_RUTA = "@ViewBag.vRuta";
+        var sColorBotonNaranja = "#FC9936";
+        var sColorBotonRojo = "#D9534F";
+
+    </script>
+
+    <style>
+
+            @@font-face {
+                font-family: "open sans";
+                src: url("@Url.Content("~")fonts/OpenSans-Regular.woff");
+            }
+
+            @@font-face {
+                font-family: "open sans light";
+                src: url("@Url.Content("~")fonts/OpenSans-Light.woff");
+            }
+
+            @@font-face {
+                font-family: "open sans bold";
+                src: url("@Url.Content("~")fonts/OpenSans-Semibold.woff");
+            }
+    </style>
+</head>
+
+<body>
+    <input type="hidden" id="hdNombreUsuario" value="@ViewBag.sPrimeroNombre" />
+    <input type="hidden" id="hdCodigoUsuario" value="@ViewBag.iIdUsuario" />
+    <input type="hidden" id="hddMessage" value="@ViewBag.message" />
+    <div id="dvLineaSuperior"></div>
+
+    <!-- ***************************
+    ** CABECERA
+    ********************************-->
+    <div id="dvCabeceraCont">
+        <div id="btnCabMenu" class="cssCabBtnMenu">
+            <img src="@ViewBag.vRuta/images/ico-menu.png" />
+        </div>
+        <div class="cssCabTitulo">
+            <div class="titulo">@ViewBag.sTitulo</div>
+            <div class="subtitulo">@ViewBag.sSubTitulo</div>
+        </div>
+        <div class="cssCabSalir">
+            <div id="dvCerrar">
+                <img src="@ViewBag.vRuta/images/ico-exit.png" width="11" />
+                Cerrar
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ***************************
+    ** MENU
+    ********************************-->
+    <div id="dvMenuLatCont" style="display:none">
+        <div id="dvDatosUsuario">
+            <img id="imgUsuario" src="@ViewBag.vRuta/images/img-usuario.png" width="65" />
+            <div id="dvNombreUsuario">@ViewBag.sNombreCompletoI</div>
+        </div>
+        <div id="dvMenuCont">
+
+            <ul class="cssMenu">
+                @foreach (var item in ViewBag.lstMenuP)
+                {
+                    <li>
+                        <a href="#">@item.sNombre</a>
+                        <ul>
+                            @foreach (var item1 in ViewBag.lstMenu)
+                            {
+                                if (item1.idPadre == item.iidMenu)
+                                {
+                                    if (item1.iAccion == 1)
+                                    {
+                                        <li onclick="javascript: fn_Submit('@item1.sRuta');">
+                                            <a href="#">@item1.sNombre</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            <a href="#">@item1.sNombre</a>
+                                        </li>
+                                    }
+                                }
+                            }
+                        </ul>
+                    </li>
+                }
+            </ul>
+
+        </div>
+        <div id="dvCredinkaPM">
+            <img src="@ViewBag.vRuta/images/img-credinka-pm.png" />
+        </div>
+    </div>
+
+
+    <!-- ***************************
+    ** CUERPO
+    ********************************-->
+    <div id="dvContenedorMedio">
+        <div id="dvCuerpoCont">
+            @RenderBody()
+        </div>
+    </div>
+    <!-- * -->
+    <!-- ***************************
+    ** PIE
+    ********************************-->
+    <div id="dvPie">
+        <div class="copy">
+            <span class="titulo">Usuario:</span>
+            @ViewBag.sNombreUsuario
+            &nbsp;&nbsp;
+            <span class="titulo">Oficina:</span>
+            @ViewBag.sDatosOficina
+            &nbsp;&nbsp;
+            <span class="titulo">Fecha:</span>
+            @ViewBag.sFecha
+        </div>
+        <div class="info">
+            <div><img src="@ViewBag.vRuta/images/img-ayni.png" width="42" /></div>
+        </div>
+    </div>
+    <!-- * -->
+    <!-- Bloqueo -->
+    <div id="dvBloqueo"></div>
+    <div id="dvBloqueoCont">
+        <img src="@ViewBag.vRuta/images/ico_loading.gif" width="30" /><br />
+        <div id="dvBloqueoMsg"></div>
+    </div>
+    <!-- * -->
+    <div id="dialog-confirm" title="Confirmación" style="display:none;">
+        <p class="dialog-text"><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span></p>
+    </div>
+
+    <div id="dialog-form" style="display:none;">
+        <!-- PARTIAL VIEW -->
+    </div>
+
+    <div id="mdlAlerta" title="Mensaje del Sistema" style="display:none;">
+        <p>
+            <span class="ui-icon ui-icon-circle-check" style="float: left; margin: 12px 12px 20px 0;"></span>
+            <span id="spMensajeAlerta"></span>
+        </p>
+    </div>
+    <form id="frmAction" />
+</body>
+
+</html>
+
+<script>
+    var sNombreUsuario = fn_StrongString(fn_ObtenerUsuario());
+
+    $(document).ready(function () {
+        if ($.trim($("#hddMessage").val()) != "") {
+            fn_util_alert("", $("#hddMessage").val(), "E");
+        }
+        $("#dvCerrar").on("click", function () {
+            var nom_usu = fn_ObtenerUsuario();
+            $('.dialog-text').html(nom_usu + ", ¿Está seguro que desea cerrar Operaciones Topaz?");
+
+            $("#dialog-confirm").dialog({
+                title: "Confirmación",
+                resizable: false,
+                height: "auto",
+                width: 400,
+                modal: true,
+                draggable: false,
+                closeOnEscape: false,
+                buttons: {
+                    "SI": function (button) {
+                        $(this).dialog("close");
+                        fn_util_bloquearPantalla("Cerrando");
+                        $.ajax({
+                            url: VG_RUTA_SERVIDOR + "CorresponsaliaBCP/CerrarSesion",
+                            data: {},
+                            cache: false,
+                            type: "POST",
+                            success: function (data) {
+                                if (data.iResultado == 1) {
+                                    window.close();
+                                }
+                            },
+                            error: function (reponse) {
+                                fn_util_alert("", "Ocurrió un inconveniente al eliminar los datos de sesión.", "E");
+                            }
+                        });
+
+                    },
+                    "NO": function () {
+                        $(this).dialog("close");
+                    }
+                }
+
+            });
+        });
+    });
+    function fn_StrongString(sPrimerNombre) {
+        return "<strong>" + sPrimerNombre + "</strong>";
+    }
+
+</script>
+<script src="@Url.Content("~/Scripts/liquidmetal.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.flexselect.js")"></script>

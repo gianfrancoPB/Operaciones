@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8733/OperacionesTopazWS/wsCondicion/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SatelitesEN" />
+  <xs:import schemaLocation="http://localhost:8733/OperacionesTopazWS/wsCondicion/?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="WsListarCondiciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="oCondicion" nillable="true" type="q1:EnCondicion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarCondicionesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsListarCondicionesResult" nillable="true" type="q2:ArrayOfEnCondicion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsObtenerCondicionId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iIdCondicion" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsObtenerCondicionIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsObtenerCondicionIdResult" nillable="true" type="q3:EnCondicion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarProductoCondicion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="enProducto" nillable="true" type="q4:EnProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarProductoCondicionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsListarProductoCondicionResult" nillable="true" type="q5:ArrayOfEnProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsMantenerProductoCondicion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ploProductos" nillable="true" type="q6:ArrayOflong" />
+        <xs:element minOccurs="0" name="oBase" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="piCodigoCartera" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsMantenerProductoCondicionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WsMantenerProductoCondicionResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarCondicionesCreditosVencidos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="oCondicion" nillable="true" type="q7:EnCondicion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarCondicionesCreditosVencidosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsListarCondicionesCreditosVencidosResult" nillable="true" type="q8:ArrayOfEnCondicion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarProductoCondicionCreditoVencidos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="enProducto" nillable="true" type="q9:EnProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarProductoCondicionCreditoVencidosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsListarProductoCondicionCreditoVencidosResult" nillable="true" type="q10:ArrayOfEnProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarProductoCondicionCreditoVencidosAhorro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="enProducto" nillable="true" type="q11:EnProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarProductoCondicionCreditoVencidosAhorroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsListarProductoCondicionCreditoVencidosAhorroResult" nillable="true" type="q12:ArrayOfEnProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarProductoCondicionProductoAhorrosOrden">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="enProducto" nillable="true" type="q13:EnCarteraProductoAhorroOrden" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarProductoCondicionProductoAhorrosOrdenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsListarProductoCondicionProductoAhorrosOrdenResult" nillable="true" type="q14:ArrayOfEnCarteraProductoAhorroOrden" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsMantenerProductoCondicionCreditoVencido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ploProductos" nillable="true" type="q15:ArrayOflong" />
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ploProductosAhorro" nillable="true" type="q16:ArrayOflong" />
+        <xs:element minOccurs="0" name="oBase" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="piCodigoCartera" type="xs:int" />
+        <xs:element minOccurs="0" name="DiasAtraso" type="xs:int" />
+        <xs:element minOccurs="0" name="MontoMinimo" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsMantenerProductoCondicionCreditoVencidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WsMantenerProductoCondicionCreditoVencidoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsGuardarOrdenProductoAhorro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="loProductoAhorro" nillable="true" type="q17:ArrayOfEnCarteraProductoAhorroOrden" />
+        <xs:element minOccurs="0" name="oBase" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="piCodigoCartera" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsGuardarOrdenProductoAhorroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WsGuardarOrdenProductoAhorroResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsObtenerCondicionId_CV">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iIdCondicion" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsObtenerCondicionId_CVResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsObtenerCondicionId_CVResult" nillable="true" type="q18:EnCondicion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

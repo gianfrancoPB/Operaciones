@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SatelitesEN" />
+  <xs:element name="ListarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poenUsuario" nillable="true" type="q1:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="ListarUsuarioResult" nillable="true" type="q2:ArrayOfEnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSListarPerfil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piCodigoUsuario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSListarPerfilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSListarPerfilResult" nillable="true" type="q3:ArrayOfEnPerfil" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSListarOficina">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piCodigoUsuario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSListarOficinaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSListarOficinaResult" nillable="true" type="q4:ArrayOfEnOficina" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSBuscarUsuarioPorId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piCodigoUsuario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSBuscarUsuarioPorIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSBuscarUsuarioPorIdResult" nillable="true" type="q5:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSBuscarBloqueoUsuarioProgramado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piCodigoUsuario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSBuscarBloqueoUsuarioProgramadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSBuscarBloqueoUsuarioProgramadoResult" nillable="true" type="q6:EnBloqueoUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSBuscarUsuarioPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psCodigoUsuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSBuscarUsuarioPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSBuscarUsuarioPorNombreResult" nillable="true" type="q7:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSObtenerRegistroBloqueoUsuarioInactivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piCodigoUsuario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSObtenerRegistroBloqueoUsuarioInactivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSObtenerRegistroBloqueoUsuarioInactivoResult" nillable="true" type="q8:EnBloqueoUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSBuscarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psCodigoUsuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSBuscarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSBuscarUsuarioResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSInhabilitarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piCodigoUsuario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSInhabilitarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSInhabilitarUsuarioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSRegistrarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnUsuario" nillable="true" type="q9:EnUsuario" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="ploEnPerfil" nillable="true" type="q10:ArrayOfEnPerfil" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="ploEnOficina" nillable="true" type="q11:ArrayOfEnOficina" />
+        <xs:element minOccurs="0" name="psNombres" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psApellidos" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSRegistrarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSRegistrarUsuarioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSEliminarBloqueoUsuarioProgramado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piCodigoBloqueoUsuarioProgramado" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSEliminarBloqueoUsuarioProgramadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSEliminarBloqueoUsuarioProgramadoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSEditarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="ploEnPerfil" nillable="true" type="q12:ArrayOfEnPerfil" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="ploEnOficina" nillable="true" type="q13:ArrayOfEnOficina" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnUsuario" nillable="true" type="q14:EnUsuario" />
+        <xs:element minOccurs="0" name="pidPersona" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSEditarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSEditarUsuarioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSRegistrarPersona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psNombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psApellidos" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnUsuario" nillable="true" type="q15:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSRegistrarPersonaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSRegistrarPersonaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSRegistrarBloqueoUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnBloqueoUsuario" nillable="true" type="q16:EnBloqueoUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSRegistrarBloqueoUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSRegistrarBloqueoUsuarioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSEditarBloqueoUsuarioProgramado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnBloqueoUsuario" nillable="true" type="q17:EnBloqueoUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSEditarBloqueoUsuarioProgramadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSEditarBloqueoUsuarioProgramadoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

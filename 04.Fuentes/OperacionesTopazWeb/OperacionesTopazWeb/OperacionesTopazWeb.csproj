@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4491B788-0682-4578-9449-43B966A50C7E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OperacionesTopazWeb</RootNamespace>
+    <AssemblyName>OperacionesTopazWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SatelitesDLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SecurityCrk">
+      <HintPath>..\..\..\SatelitesDLL\SecurityCrk.dll</HintPath>
+    </Reference>
+    <Reference Include="SeguridadCrkWCF">
+      <HintPath>..\..\..\SatelitesDLL\SeguridadCrkWCF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="UtilitarioCrk">
+      <HintPath>..\..\..\SatelitesDLL\UtilitarioCrk.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\InitialPage.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccesosController.cs" />
+    <Compile Include="Controllers\ConfiguracionController.cs" />
+    <Compile Include="Controllers\CorresponsaliaController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OperacionesController.cs" />
+    <Compile Include="Controllers\ReportesController.cs" />
+    <Compile Include="Filters\SeguridadIngreso.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\wsCondicion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\wsGestion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\wsSeguridad\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\wsUsuario\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\flexselect.css" />
+    <Content Include="Content\css\IndexProspeccion.css" />
+    <Content Include="Content\css\ListaProductoAhorro.css" />
+    <Content Include="Content\css\pro.reporte.css" />
+    <Content Include="Content\css\pro.reportes.css" />
+    <Content Include="Content\css\ReporteBase.css" />
+    <Content Include="Content\css\Reportes.css" />
+    <Content Include="Content\css\TabsSolicitud.css" />
+    <Content Include="Content\js\Condiciones\bandeja.js" />
+    <Content Include="Content\js\Condiciones\BandejaCondicionalCV.js" />
+    <Content Include="Content\js\Condiciones\CondicionCV.js" />
+    <Content Include="Content\js\Condiciones\detalleCreditosVencidos.js" />
+    <Content Include="Content\js\Condiciones\detalle1.js" />
+    <Content Include="Content\js\Condiciones\detalle2.js" />
+    <Content Include="Content\js\Condiciones\detalleCreditosVencidos.js" />
+    <Content Include="Content\js\Condiciones\ListarOrdenProductoAhorros.js" />
+    <Content Include="Content\js\Corresponsalia\CajaArequipa.js" />
+    <Content Include="Content\js\Corresponsalia\BancoDeCredito.js" />
+    <Content Include="Content\js\Corresponsalia\CreditosVencidos.js" />
+    <Content Include="Content\js\Reportes\AfectacionesMasivas.js" />
+    <Content Include="Content\js\Reportes\Pago.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\OpenSans-Light.woff" />
+    <Content Include="fonts\OpenSans-Regular.woff" />
+    <Content Include="fonts\OpenSans-Semibold.woff" />
+    <Content Include="Images\blankSpace.png" />
+    <Content Include="Images\Credinka.png" />
+    <Content Include="Images\Excel.gif" />
+    <Content Include="Images\uiTabsArrow.png" />
+    <Content Include="Scripts\jqChosen\css\jquery.chosen.css" />
+    <Content Include="Scripts\jqChosen\img\bg-right.png" />
+    <Content Include="Scripts\jqChosen\img\chosen-sprite.png" />
+    <Content Include="Scripts\jqChosen\js\jquery.chosen.js" />
+    <Content Include="Scripts\jqPlot\css\jquery.jqplot.css" />
+    <Content Include="Scripts\jqPlot\css\jquery.jqplot.min.css" />
+    <Content Include="Scripts\jqPlot\jquery.dataTables.js" />
+    <Content Include="Scripts\jqPlot\jquery.table.marge.js" />
+    <Content Include="Scripts\jqPlot\jsAjax.js" />
+    <Content Include="Scripts\jqPlot\js\jqplot.barRenderer.min.js" />
+    <Content Include="Scripts\jqPlot\js\jqplot.canvasAxisTickRenderer.js" />
+    <Content Include="Scripts\jqPlot\js\jqplot.canvasTextRenderer.min.js" />
+    <Content Include="Scripts\jqPlot\js\jqplot.categoryAxisRenderer.js" />
+    <Content Include="Scripts\jqPlot\js\jqplot.pointLabels.js" />
+    <Content Include="Scripts\jquery.dataTables.js" />
+    <Content Include="Scripts\jquery.dropdown.js" />
+    <Content Include="Scripts\jquery.flexselect.js" />
+    <Content Include="Scripts\jquery.session.js" />
+    <Content Include="Scripts\jquery.signalR-2.3.0.js" />
+    <Content Include="Scripts\jquery.signalR-2.3.0.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.4.1.js" />
+    <Content Include="Scripts\jquery.signalR-2.4.1.min.js" />
+    <Content Include="Scripts\jquery.table.marge.js" />
+    <Content Include="Scripts\jsAjax.js" />
+    <Content Include="Properties\DataSources\UtilitarioCrk.wsSeguridad.EnMenu.datasource" />
+    <Content Include="Properties\DataSources\UtilitarioCrk.wsSeguridad.EnModulo.datasource" />
+    <Content Include="Properties\DataSources\UtilitarioCrk.wsSeguridad.EnUsuario.datasource" />
+    <None Include="Properties\PublishProfiles\perfil.pubxml" />
+    <Content Include="Scripts\liquidmetal.js" />
+    <Content Include="Scripts\popover.js" />
+    <Content Include="Service References\wsCondicion\OperacionesTopazWeb.wsCondicion.EnCondicion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\wsCondicion\OperacionesTopazWeb.wsCondicion.EnProducto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\wsCondicion\OperacionesTopazWeb.wsCondicion.EnCarteraProductoAhorroOrden.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\wsCondicion\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsCondicion\configuration91.svcinfo" />
+    <None Include="Service References\wsCondicion\configuration.svcinfo" />
+    <None Include="Service References\wsCondicion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\wsGestion\OperacionesTopazWeb.wsGestion.EnCorresponsalia.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\wsGestion\OperacionesTopazWeb.wsGestion.EnCorresponsaliaDescargarPagos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\wsGestion\OperacionesTopazWeb.wsGestion.EnAfectacionesMasivasReporteCabecera.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\wsCondicion\SatelitesEN.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsCondicion\service.wsdl" />
+    <None Include="Service References\wsCondicion\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsCondicion\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\wsGestion\OperacionesTopazWeb.wsGestion.EnExportarDeudasCA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\wsGestion\SatelitesEN1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsGestion\service1.wsdl" />
+    <None Include="Service References\wsGestion\service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsGestion\service21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsSeguridad\configuration91.svcinfo" />
+    <None Include="Service References\wsSeguridad\configuration.svcinfo" />
+    <None Include="Service References\wsGestion\configuration91.svcinfo" />
+    <None Include="Service References\wsGestion\configuration.svcinfo" />
+    <None Include="Service References\wsGestion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\wsSeguridad\OperacionesTopazWeb.wsSeguridad.EnBloqueoUsuarioWAPI.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\wsSeguridad\OperacionesTopazWeb.wsSeguridad.EnUsuarioWAPI.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\wsSeguridad\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\wsSeguridad\SeguridadWS1.disco" />
+    <Content Include="Service References\wsUsuario\OperacionesTopazWeb.wsUsuario.EnBloqueoUsuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\wsUsuario\OperacionesTopazWeb.wsUsuario.EnOficina.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\wsUsuario\OperacionesTopazWeb.wsUsuario.EnPerfil.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\wsSeguridad\SeguridadWS3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsSeguridad\SeguridadWS31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsSeguridad\SeguridadWS32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsSeguridad\wsSEA1.wsdl" />
+    <None Include="Service References\wsUsuario\configuration91.svcinfo" />
+    <None Include="Service References\wsUsuario\configuration.svcinfo" />
+    <None Include="Service References\wsUsuario\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\wsUsuario\SeguridadWS1.disco" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Configuracion\Bandeja.cshtml" />
+    <Content Include="Views\Configuracion\Detalle1.cshtml" />
+    <Content Include="Views\Configuracion\Detalle2.cshtml" />
+    <Content Include="Views\Corresponsalia\CreditosVencidos.cshtml" />
+    <None Include="Service References\wsUsuario\SeguridadWS3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUsuario\SeguridadWS31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUsuario\SeguridadWS32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUsuario\wsUsuario.wsdl" />
+    <Content Include="Views\Configuracion\Bandeja.cshtml" />
+    <Content Include="Views\Configuracion\Detalle1.cshtml" />
+    <Content Include="Views\Configuracion\Detalle2.cshtml" />
+    <Content Include="Views\Corresponsalia\CreditosVencidos.cshtml" />
+    <Content Include="Views\Reportes\Pago.cshtml" />
+    <Content Include="Views\Reportes\View.cshtml" />
+    <Content Include="Views\Configuracion\BandejaCreditoVencidos.cshtml" />
+    <Content Include="Views\Configuracion\BandejaCV.cshtml" />
+    <Content Include="Views\Configuracion\Condicion CV.cshtml" />
+    <Content Include="Views\Configuracion\DetalleCreditoVencidos.cshtml" />
+    <Content Include="Views\Configuracion\ListaProductoAhorro.cshtml" />
+    <Content Include="Views\Operaciones\Index.cshtml" />
+    <Content Include="Views\Reportes\AfectacionesMasivas.cshtml" />
+    <Content Include="Views\Corresponsalia\CajaArequipa.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Afectacion\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Views\Accesos\AccesoDenegado.cshtml" />
+    <Content Include="Views\Accesos\Error.cshtml" />
+    <Content Include="Views\Accesos\TimeOut.cshtml" />
+    <Content Include="Views\Corresponsalia\BancoDeCredito.cshtml" />
+    <Content Include="Views\Shared\AccesoDenegado.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\wsCondicion\" />
+    <WCFMetadataStorage Include="Service References\wsGestion\" />
+    <WCFMetadataStorage Include="Service References\wsSeguridad\" />
+    <WCFMetadataStorage Include="Service References\wsUsuario\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17362</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:17362/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

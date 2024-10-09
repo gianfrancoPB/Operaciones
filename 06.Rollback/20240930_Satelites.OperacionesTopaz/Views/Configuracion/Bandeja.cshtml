@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.sSubTitulo = "Configuración de Condiciones";
+}
+
+
+<div id="dv_ibox" class="cssBox" style="width:90%">
+    <div class="titulo">
+        Lista de condiciones de corresponsalia
+        <div class="right">
+  
+            <button type="button" id="btnVerDatallles"  class="css-boton css-boton-xs css-boton-naranja" onclick="javascript: fn_VerDetalles();">Detalles</button>
+           
+        </div>
+    </div>
+    <div class="cuerpo cssAlignLeft">
+        <table id="tblCondiciones" class="display dataTable no-footer" width="100%">
+            <colgroup>
+                <col width="5%" />
+                <col width="5%" />                
+                <col width="20%" />                
+                <col width="40%" />                
+                <col width="5%" />
+            </colgroup>
+            <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th>Código</th>                
+                <th>Condición</th>
+                <th>Descripción</th>
+                <th>Estado</th>                
+            </tr>
+            </thead>
+            <tbody></tbody>
+
+        </table>
+        <span id="spnAutonomiasCount" style="color:rgb(128,128,128); font-size:x-small; margin-top:10px"></span>
+    </div>
+</div>
+
+<form id="frmDetalleCondicion" action="@Url.Action("Detalle1")" method="POST" style="display: none;">
+    <input type="hidden" id="txtIdCondicion" name="iIdCondicion"/>
+</form>
+
+<script src="~/Content/js/Condiciones/bandeja.js"></script>

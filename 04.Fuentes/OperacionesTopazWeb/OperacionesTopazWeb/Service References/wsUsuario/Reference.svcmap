@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a25e4562-b905-4201-9b1c-94806f8b3cfb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://srvappdes01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SeguridadWS3.xsd" MetadataType="Schema" ID="b02b18e0-e25f-4a41-b514-dbac8b624c72" SourceId="1" SourceUrl="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc?xsd=xsd0" />
+    <MetadataFile FileName="wsUsuario1.wsdl" MetadataType="Wsdl" ID="b49e9e2d-ff17-48a6-a64c-2c878aef5c1d" SourceId="1" SourceUrl="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc?wsdl" />
+    <MetadataFile FileName="SeguridadWS1.disco" MetadataType="Disco" ID="0deacdd8-35f8-4e94-baf3-62e7b9bac011" SourceId="1" SourceUrl="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc?disco" />
+    <MetadataFile FileName="SeguridadWS31.xsd" MetadataType="Schema" ID="47723a0d-ddaa-41d1-b385-c0b88b7726d6" SourceId="1" SourceUrl="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc?xsd=xsd1" />
+    <MetadataFile FileName="SeguridadWS32.xsd" MetadataType="Schema" ID="ba3f57d7-8089-4a69-8f1f-428890321913" SourceId="1" SourceUrl="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

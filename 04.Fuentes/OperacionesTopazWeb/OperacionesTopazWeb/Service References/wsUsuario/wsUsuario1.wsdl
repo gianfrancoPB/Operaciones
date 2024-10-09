@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="wsUsuario" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SatelitesEN" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IwsUsuario_ListarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_ListarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSListarPerfil_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSListarPerfil" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSListarPerfil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSListarPerfilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSListarOficina_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSListarOficina" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSListarOficina_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSListarOficinaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSBuscarUsuarioPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSBuscarUsuarioPorId" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSBuscarUsuarioPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSBuscarUsuarioPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSBuscarBloqueoUsuarioProgramado_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSBuscarBloqueoUsuarioProgramado" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSBuscarBloqueoUsuarioProgramado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSBuscarBloqueoUsuarioProgramadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSBuscarUsuarioPorNombre_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSBuscarUsuarioPorNombre" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSBuscarUsuarioPorNombre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSBuscarUsuarioPorNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSObtenerRegistroBloqueoUsuarioInactivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSObtenerRegistroBloqueoUsuarioInactivo" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSObtenerRegistroBloqueoUsuarioInactivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSObtenerRegistroBloqueoUsuarioInactivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSBuscarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSBuscarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSBuscarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSBuscarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSInhabilitarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSInhabilitarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSInhabilitarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSInhabilitarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSRegistrarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSRegistrarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSRegistrarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSRegistrarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSEliminarBloqueoUsuarioProgramado_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSEliminarBloqueoUsuarioProgramado" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSEliminarBloqueoUsuarioProgramado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSEliminarBloqueoUsuarioProgramadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSEditarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSEditarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSEditarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSEditarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSRegistrarPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSRegistrarPersona" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSRegistrarPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSRegistrarPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSRegistrarBloqueoUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSRegistrarBloqueoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSRegistrarBloqueoUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSRegistrarBloqueoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSEditarBloqueoUsuarioProgramado_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSEditarBloqueoUsuarioProgramado" />
+  </wsdl:message>
+  <wsdl:message name="IwsUsuario_WSEditarBloqueoUsuarioProgramado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSEditarBloqueoUsuarioProgramadoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IwsUsuario">
+    <wsdl:operation name="ListarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/ListarUsuario" message="tns:IwsUsuario_ListarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/ListarUsuarioResponse" message="tns:IwsUsuario_ListarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSListarPerfil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSListarPerfil" message="tns:IwsUsuario_WSListarPerfil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSListarPerfilResponse" message="tns:IwsUsuario_WSListarPerfil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSListarOficina">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSListarOficina" message="tns:IwsUsuario_WSListarOficina_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSListarOficinaResponse" message="tns:IwsUsuario_WSListarOficina_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSBuscarUsuarioPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSBuscarUsuarioPorId" message="tns:IwsUsuario_WSBuscarUsuarioPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSBuscarUsuarioPorIdResponse" message="tns:IwsUsuario_WSBuscarUsuarioPorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSBuscarBloqueoUsuarioProgramado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSBuscarBloqueoUsuarioProgramado" message="tns:IwsUsuario_WSBuscarBloqueoUsuarioProgramado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSBuscarBloqueoUsuarioProgramadoResponse" message="tns:IwsUsuario_WSBuscarBloqueoUsuarioProgramado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSBuscarUsuarioPorNombre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSBuscarUsuarioPorNombre" message="tns:IwsUsuario_WSBuscarUsuarioPorNombre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSBuscarUsuarioPorNombreResponse" message="tns:IwsUsuario_WSBuscarUsuarioPorNombre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSObtenerRegistroBloqueoUsuarioInactivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSObtenerRegistroBloqueoUsuarioInactivo" message="tns:IwsUsuario_WSObtenerRegistroBloqueoUsuarioInactivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSObtenerRegistroBloqueoUsuarioInactivoResponse" message="tns:IwsUsuario_WSObtenerRegistroBloqueoUsuarioInactivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSBuscarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSBuscarUsuario" message="tns:IwsUsuario_WSBuscarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSBuscarUsuarioResponse" message="tns:IwsUsuario_WSBuscarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSInhabilitarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSInhabilitarUsuario" message="tns:IwsUsuario_WSInhabilitarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSInhabilitarUsuarioResponse" message="tns:IwsUsuario_WSInhabilitarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSRegistrarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSRegistrarUsuario" message="tns:IwsUsuario_WSRegistrarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSRegistrarUsuarioResponse" message="tns:IwsUsuario_WSRegistrarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSEliminarBloqueoUsuarioProgramado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSEliminarBloqueoUsuarioProgramado" message="tns:IwsUsuario_WSEliminarBloqueoUsuarioProgramado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSEliminarBloqueoUsuarioProgramadoResponse" message="tns:IwsUsuario_WSEliminarBloqueoUsuarioProgramado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSEditarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSEditarUsuario" message="tns:IwsUsuario_WSEditarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSEditarUsuarioResponse" message="tns:IwsUsuario_WSEditarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSRegistrarPersona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSRegistrarPersona" message="tns:IwsUsuario_WSRegistrarPersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSRegistrarPersonaResponse" message="tns:IwsUsuario_WSRegistrarPersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSRegistrarBloqueoUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSRegistrarBloqueoUsuario" message="tns:IwsUsuario_WSRegistrarBloqueoUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSRegistrarBloqueoUsuarioResponse" message="tns:IwsUsuario_WSRegistrarBloqueoUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSEditarBloqueoUsuarioProgramado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsUsuario/WSEditarBloqueoUsuarioProgramado" message="tns:IwsUsuario_WSEditarBloqueoUsuarioProgramado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsUsuario/WSEditarBloqueoUsuarioProgramadoResponse" message="tns:IwsUsuario_WSEditarBloqueoUsuarioProgramado_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IwsUsuario" type="tns:IwsUsuario">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/ListarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSListarPerfil">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSListarPerfil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSListarOficina">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSListarOficina" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSBuscarUsuarioPorId">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSBuscarUsuarioPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSBuscarBloqueoUsuarioProgramado">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSBuscarBloqueoUsuarioProgramado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSBuscarUsuarioPorNombre">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSBuscarUsuarioPorNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSObtenerRegistroBloqueoUsuarioInactivo">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSObtenerRegistroBloqueoUsuarioInactivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSBuscarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSBuscarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSInhabilitarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSInhabilitarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSRegistrarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSRegistrarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSEliminarBloqueoUsuarioProgramado">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSEliminarBloqueoUsuarioProgramado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSEditarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSEditarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSRegistrarPersona">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSRegistrarPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSRegistrarBloqueoUsuario">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSRegistrarBloqueoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSEditarBloqueoUsuarioProgramado">
+      <soap:operation soapAction="http://tempuri.org/IwsUsuario/WSEditarBloqueoUsuarioProgramado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsUsuario">
+    <wsdl:port name="BasicHttpBinding_IwsUsuario" binding="tns:BasicHttpBinding_IwsUsuario">
+      <soap:address location="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsUsuario.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.sSubTitulo = "Reporte Afectaciones Masivas";
+}
+
+
+<div class="cssBox" style="width:100%">
+    <div id="dv_ibox_ArchivoValidar">
+        <div id="divTitular" class="cssBox css-div-form css-div-form-6" style="width:60%">
+            <div class="titulo">
+                Filtros de Búsqueda
+                <div class="right">
+                    <input type="button" id="btnBuscar" class="css-boton css-boton-xs css-boton-naranja" onclick="javascript: fn_ValidarBusqueda();" value="Buscar">
+                    <input type="button" id="btnLimpiar" value="Limpiar" class="css-boton css-boton-xs css-boton-blanco" onclick="javascript: fn_Limpiar()">
+                </div>
+            </div>
+            <div id="divAdjuntar" class="cuerpo cssAlignLeft">
+                <div class="css-div-form css-div-form-6">
+                    <div class="css-div-form css-div-form-2 cssAlignRight">
+                        <label>Fecha Inicial:</label><span class="css-txt-oblg">(*)</span><br>
+                    </div>
+                    <div class="css-div-form css-div-form-1" style="text-align: center;">
+                        <label>:</label>
+                    </div>
+                    <div class="css-div-form css-div-form-3">
+                        <input class="dtdatepicker css-input css-input-calendar" id="txtFechaInicio" name="txtFechaInicio" onpaste="javascript: return false;" onchange="fn_RestablecerFechaInicio();" readonly="readonly" style="width: 40%" type="text" required=""> 
+                    </div>
+                </div>
+                <div class="css-div-form css-div-form-6">
+                    <div class="css-div-form css-div-form-2 cssAlignRight">
+                        <label>Fecha Final:</label><span class="css-txt-oblg">(*)</span><br>
+                    </div>
+                    <div class="css-div-form css-div-form-1" style="text-align: center;">
+                        <label>:</label>
+                    </div>
+                    <div class="css-div-form css-div-form-3">
+                        <input class="dtdatepicker css-input css-input-calendar" id="txtFechaFin" name="txtFechaFin" onpaste="javascript: return false;" readonly="readonly" style="width: 40%" type="text" required="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dv_ibox_ArchivoProcesarDetalle" class="cssBox css-div-form css-div-form-6">
+        <div class="titulo">
+            Listado de afectasiones  <label id="mesBusqueda" style="color:#212121"></label>
+            <div class="right">
+                <div id="btnResumen" data-flag="1" style="float: left; cursor: pointer" onclick="javascript: fn_Exportar()">
+                    <div class="btn-excel">EXPORTAR</div>
+                    <div style="height: 25px; padding-left: 70px; padding-top: 3px">
+                        <img src="~/Images/Excel.gif" style="width: 25px; height: 22px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="divAdjuntar" class="cuerpo cssAlignLeft">
+            <div class="css-div-form css-div-form-6">
+
+                <table id="tblAfectasiones" class="dataTable">
+                    <thead>
+                        <tr>
+                            <td width="5%">Item</td>
+                            <td width="5%">Ticket</td>
+                            <td width="5%">Fecha</td>
+                            <td width="5%">Hora</td>
+                            <td width="25%">Proceso</td>
+                            <td width="5%">Usuario</td>
+                            <td width="20%">Nombre</td>
+                            <td width="10%">Registros</td>
+                            <td width="10%">Registros Ok</td>
+                            <td width="10%">Registros Error</td>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="css-div-form css-div-form-6">
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+
+<link href="~/Content/css/ReporteBase.css" rel="stylesheet" />
+
+<script src="~/Content/js/Reportes/AfectacionesMasivas.js"></script>
+

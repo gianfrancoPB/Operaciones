@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="wsSEA" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsSEA.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsSEA.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsSEA.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SatelitesEN" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IwsSEA_WSValidarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarUsuarioMovil_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarUsuarioMovil" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarUsuarioMovil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarUsuarioMovilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSObtenerModuloUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSObtenerModuloUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSObtenerModuloUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSObtenerModuloUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSObtenerMenuModuloUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSObtenerMenuModuloUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSObtenerMenuModuloUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSObtenerMenuModuloUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarUsuarioMovilAyni_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarUsuarioMovilAyni" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarUsuarioMovilAyni_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarUsuarioMovilAyniResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarAD_CarteraDigital_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarAD_CarteraDigital" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarAD_CarteraDigital_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarAD_CarteraDigitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSAutenticacionAD_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSAutenticacionAD" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSAutenticacionAD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSAutenticacionADResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidacionAD_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidacionAD" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidacionAD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidacionADResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSAutenticacionWAPI_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSAutenticacionWAPI" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSAutenticacionWAPI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSAutenticacionWAPIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSObtenerUsuarioWAPI_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSObtenerUsuarioWAPI" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSObtenerUsuarioWAPI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSObtenerUsuarioWAPIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSCerrarSesionWAPI_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSCerrarSesionWAPI" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSCerrarSesionWAPI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSCerrarSesionWAPIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarAccesoMenuId_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarAccesoMenuId" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarAccesoMenuId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarAccesoMenuIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarAccesoMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarAccesoMenu" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarAccesoMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarAccesoMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarSesionWAPI_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarSesionWAPI" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSValidarSesionWAPI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSValidarSesionWAPIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSDesbloquearUsuarioIntentoFallido_InputMessage">
+    <wsdl:part name="parameters" element="tns:WSDesbloquearUsuarioIntentoFallido" />
+  </wsdl:message>
+  <wsdl:message name="IwsSEA_WSDesbloquearUsuarioIntentoFallido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WSDesbloquearUsuarioIntentoFallidoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IwsSEA">
+    <wsdl:operation name="WSValidarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSValidarUsuario" message="tns:IwsSEA_WSValidarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSValidarUsuarioResponse" message="tns:IwsSEA_WSValidarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarUsuarioMovil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSValidarUsuarioMovil" message="tns:IwsSEA_WSValidarUsuarioMovil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSValidarUsuarioMovilResponse" message="tns:IwsSEA_WSValidarUsuarioMovil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSObtenerModuloUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSObtenerModuloUsuario" message="tns:IwsSEA_WSObtenerModuloUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSObtenerModuloUsuarioResponse" message="tns:IwsSEA_WSObtenerModuloUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSObtenerMenuModuloUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSObtenerMenuModuloUsuario" message="tns:IwsSEA_WSObtenerMenuModuloUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSObtenerMenuModuloUsuarioResponse" message="tns:IwsSEA_WSObtenerMenuModuloUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarUsuarioMovilAyni">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSValidarUsuarioMovilAyni" message="tns:IwsSEA_WSValidarUsuarioMovilAyni_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSValidarUsuarioMovilAyniResponse" message="tns:IwsSEA_WSValidarUsuarioMovilAyni_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarAD_CarteraDigital">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSValidarAD_CarteraDigital" message="tns:IwsSEA_WSValidarAD_CarteraDigital_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSValidarAD_CarteraDigitalResponse" message="tns:IwsSEA_WSValidarAD_CarteraDigital_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSAutenticacionAD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSAutenticacionAD" message="tns:IwsSEA_WSAutenticacionAD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSAutenticacionADResponse" message="tns:IwsSEA_WSAutenticacionAD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSValidacionAD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSValidacionAD" message="tns:IwsSEA_WSValidacionAD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSValidacionADResponse" message="tns:IwsSEA_WSValidacionAD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSAutenticacionWAPI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSAutenticacionWAPI" message="tns:IwsSEA_WSAutenticacionWAPI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSAutenticacionWAPIResponse" message="tns:IwsSEA_WSAutenticacionWAPI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSObtenerUsuarioWAPI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSObtenerUsuarioWAPI" message="tns:IwsSEA_WSObtenerUsuarioWAPI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSObtenerUsuarioWAPIResponse" message="tns:IwsSEA_WSObtenerUsuarioWAPI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSCerrarSesionWAPI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSCerrarSesionWAPI" message="tns:IwsSEA_WSCerrarSesionWAPI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSCerrarSesionWAPIResponse" message="tns:IwsSEA_WSCerrarSesionWAPI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarAccesoMenuId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSValidarAccesoMenuId" message="tns:IwsSEA_WSValidarAccesoMenuId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSValidarAccesoMenuIdResponse" message="tns:IwsSEA_WSValidarAccesoMenuId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarAccesoMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSValidarAccesoMenu" message="tns:IwsSEA_WSValidarAccesoMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSValidarAccesoMenuResponse" message="tns:IwsSEA_WSValidarAccesoMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarSesionWAPI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSValidarSesionWAPI" message="tns:IwsSEA_WSValidarSesionWAPI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSValidarSesionWAPIResponse" message="tns:IwsSEA_WSValidarSesionWAPI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WSDesbloquearUsuarioIntentoFallido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsSEA/WSDesbloquearUsuarioIntentoFallido" message="tns:IwsSEA_WSDesbloquearUsuarioIntentoFallido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsSEA/WSDesbloquearUsuarioIntentoFallidoResponse" message="tns:IwsSEA_WSDesbloquearUsuarioIntentoFallido_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IwsSEA" type="tns:IwsSEA">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WSValidarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarUsuarioMovil">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSValidarUsuarioMovil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSObtenerModuloUsuario">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSObtenerModuloUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSObtenerMenuModuloUsuario">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSObtenerMenuModuloUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarUsuarioMovilAyni">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSValidarUsuarioMovilAyni" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarAD_CarteraDigital">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSValidarAD_CarteraDigital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSAutenticacionAD">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSAutenticacionAD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSValidacionAD">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSValidacionAD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSAutenticacionWAPI">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSAutenticacionWAPI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSObtenerUsuarioWAPI">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSObtenerUsuarioWAPI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSCerrarSesionWAPI">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSCerrarSesionWAPI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarAccesoMenuId">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSValidarAccesoMenuId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarAccesoMenu">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSValidarAccesoMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSValidarSesionWAPI">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSValidarSesionWAPI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSDesbloquearUsuarioIntentoFallido">
+      <soap:operation soapAction="http://tempuri.org/IwsSEA/WSDesbloquearUsuarioIntentoFallido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsSEA">
+    <wsdl:port name="BasicHttpBinding_IwsSEA" binding="tns:BasicHttpBinding_IwsSEA">
+      <soap:address location="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsSEA.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

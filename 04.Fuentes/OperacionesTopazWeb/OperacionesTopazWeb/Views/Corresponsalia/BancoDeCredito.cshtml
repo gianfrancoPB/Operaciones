@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.sSubTitulo = "Banco de Credito";
+}
+ 
+<style>
+    body {
+        font-family: "open sans";
+        font-size: 11px;
+    }
+
+    .lb {
+        padding: 3px;
+        background: #FC9936;
+        display: table;
+        color: #fff;
+        border: 1px solid #FC9936;
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+</style>
+<div id="dv_ibox" class="cssBox" style="width:95%">
+    <div class="titulo">
+        Corresponsalia BCP
+    </div>
+    <div class="cuerpo cssAlignLeft">
+        <div id="tabs-solicitud" >
+            <div>
+                <ul style="text-align:center;">
+                    <li tabindex="-1"><a href="#tabs-2">Generación de Pagos</a></li>
+                    <li tabindex="-1"><a href="#tabs-1">Generación de Deuda</a></li>
+
+                </ul>
+            </div>
+
+            <div id="tabs-1" class="ui-tabs-body">
+                <div class="titulo">
+                    Generación de Deuda
+                    <div class="right">
+                        <input type="button" id="btnGenerarData"        class="css-boton css-boton-xs css-boton-verde"      onclick="javascript: fn_GeneracionDeuda(1)" value="Generar"  >
+                        <input type="button" id="btnExportaDataSoles"   class="css-boton css-boton-xs css-boton-naranja"    onclick="javascript: fn_Exportar(1)"        value="Exportar Soles"   hidden>
+                        <input type="button" id="btnExportaDataDolares" class="css-boton css-boton-xs css-boton-naranja"    onclick="javascript: fn_Exportar(2)"        value="Exportar Dolares" hidden>
+                    </div>
+                </div>
+                <div id="dvCampos" class="cuerpo cssAlignLeft" style="display: none">
+                    <fieldset class="cssAlignLeft" style="width: 98%; margin: auto">
+
+
+                        <div class="css-div-form" style="width:11%">
+                            <label>Fecha Proceso</label>
+                        </div>
+                        <div style="width:25px; text-align:left; display: inline-table">
+                            <label>:</label>
+                        </div>
+                        <div class="css-div-form css-div-form-3">
+                            <input type="text" id="txtFechaProceso" class="css-input" style="text-align: left; width: 80%" disabled>
+                        </div><br />
+ 
+
+                        <div class="css-div-form" style="width:11%">
+                            <label>Nombre Usuario</label>
+                        </div>
+                        <div style="width:25px; text-align:left; display: inline-table">
+                            <label>:</label>
+                        </div>
+                        <div class="css-div-form css-div-form-3">
+                            <input type="text" id="txtNombreUsuario" class="css-input" style="text-align: left; width: 80%" disabled>
+                        </div><br />
+
+                        <div class="css-div-form " style="width:11%">
+                            <label>Mensaje</label>
+                        </div>
+                        <div style="width:25px; text-align:left; display: inline-table">
+                            <label>:</label>
+                        </div>
+                        <div class="css-div-form css-div-form-3">
+                            <input type="text" id="txtMensaje" class="css-input" style="text-align: left; width: 80%" disabled>
+                        </div><br />
+
+                        <div class="css-div-form " style="width:11%">
+                            <label>Cantidad de Registros</label>
+                        </div>
+                        <div style="width:25px; text-align:left; display: inline-table">
+                            <label>:</label>
+                        </div>
+                        <div class="css-div-form css-div-form-3">
+                            <input type="text" id="txtCantidadRegistros" class="css-input" style="text-align: left; width: 80%" disabled>
+                        </div><br />
+                    </fieldset>
+                </div>
+
+            </div>
+            <div id="tabs-2" class="ui-tabs-body">
+                <div class="titulo">
+                    Generación de Pagos
+                    <div class="right">
+                        <input type="button" id="btnImportarDataSoles"      class="css-boton css-boton-xs css-boton-naranja"    onclick="javascript: fu_GeneracionPagosConfirm(1)"      value="Generar pagos Soles" hidden>
+                        <input type="button" id="btnImportarDataDolares"    class="css-boton css-boton-xs css-boton-naranja"    onclick="javascript: fu_GeneracionPagosConfirm(2)"      value="Generar pagos Dolares" hidden>
+                        <input type="button" id="btnDescargarDataDolares"   class="css-boton css-boton-xs css-boton-verde"      onclick="javascript: fu_ExportarPagosConfirm()"         value="Descargar pagos" hidden>
+                        <input type="button" id="btnVolverGenerarPagos"     class="css-boton css-boton-xs"                      onclick="javascript: fn_VolverGenerarPagos()"          value="Volver Importar Archivos" hidden>
+                    </div>
+                </div>
+
+                <div class="css-div-form css-div-form-6" style="overflow-y: auto; max-height: 300px; display: block" id="ipAdjuntarArchivos">
+                    <div class="css-div-form css-div-form-2">
+                        <label>Adjuntar archivo</label>
+                    </div>
+                    <div class="css-div-form css-div-form-4">
+                        <input id="iptNombreArchivo" class="css-input cssAlignRight" disabled style="width: 212px !important; display: inline" />
+                        <div id="div_Input_Archivo" style="padding-top: 3px; width: 100%; display: inline">
+                            <label class="lb" style="color: white; display: inline; cursor: pointer; font-family: Arial,Helvetica,sans-serif; font-size: 1em">
+                                Examinar
+                                <input type="file" style="width: 83%" accept="text/plain"  id="file-input" name="file-input">
+                            </label>
+                        </div>
+                    </div>                   
+
+                    <fieldset>
+
+                        <legend>Contenido del archivo</legend>
+                        <pre id="contenido-archivo"></pre>
+                    </fieldset>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<link href="@Url.Content("~/Content/css/TabsSolicitud.css")" rel="stylesheet" />
+<script src="@Url.Content("~/Content/js/Corresponsalia/BancoDeCredito.js")"></script>
+

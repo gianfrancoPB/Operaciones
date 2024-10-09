@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.sSubTitulo = "Afectación Automatico";
+}
+ 
+<style>
+    body {
+        font-family: "open sans";
+        font-size: 11px;
+    }
+
+    .lb {
+        padding: 3px;
+        background: #FC9936;
+        display: table;
+        color: #fff;
+        border: 1px solid #FC9936;
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+</style>
+<div id="dv_ibox" class="cssBox" style="width:95%">
+    <div class="titulo">
+        Creditos Vencidos
+    </div>
+    <div class="cuerpo cssAlignLeft">
+        <div id="tabs-solicitud" >
+            <div>
+                <div class="titulo">
+                    Generación de Pagos
+                    <div class="right">
+                        <input type="button" id="btnGenerarData"            class="css-boton css-boton-xs css-boton-verde"      onclick="javascript: fn_GeneracionDeuda()"    value="Generar">
+                        <input type="button" id="btnDescargarDataCV"        class="css-boton css-boton-xs css-boton-verde"      onclick="javascript: fn_DescargarDataCV()"    value="Descargar Creditos Vencidos" hidden >
+                        <input type="button" id="btnVolverGenerarData"      class="css-boton css-boton-xs css-boton-verde"      onclick="javascript: fn_GeneracionDeuda()"    value="Generar" hidden>
+                    </div>
+                </div>
+                <div id="dvCampos" class="cuerpo cssAlignLeft" style="display: none">
+                    <fieldset class="cssAlignLeft" style="width: 98%; margin: auto">
+                        <div class="css-div-form" style="width:11%">
+                            <label>Fecha Proceso</label>
+                        </div>
+                        <div style="width:25px; text-align:left; display: inline-table">
+                            <label>:</label>
+                        </div>
+                        <div class="css-div-form css-div-form-3">
+                            <input type="text" id="txtFechaProceso" class="css-input" style="text-align: left; width: 80%" disabled>
+                        </div><br />
+
+
+
+                        <div class="css-div-form" style="width:11%">
+                            <label>Nombre Usuario</label>
+                        </div>
+                        <div style="width:25px; text-align:left; display: inline-table">
+                            <label>:</label>
+                        </div>
+                        <div class="css-div-form css-div-form-3">
+                            <input type="text" id="txtNombreUsuario" class="css-input" style="text-align: left; width: 80%" disabled>
+                        </div><br />
+
+                        <div class="css-div-form " style="width:11%">
+                            <label>Mensaje</label>
+                        </div>
+                        <div style="width:25px; text-align:left; display: inline-table">
+                            <label>:</label>
+                        </div>
+                        <div class="css-div-form css-div-form-3">
+                            <input type="text" id="txtMensaje" class="css-input" style="text-align: left; width: 80%" disabled>
+                        </div><br />
+
+                        <div class="css-div-form " style="width:11%">
+                            <label>Cantidad de Registros</label>
+                        </div>
+                        <div style="width:25px; text-align:left; display: inline-table">
+                            <label>:</label>
+                        </div>
+                        <div class="css-div-form css-div-form-3">
+                            <input type="text" id="txtCantidadRegistros" class="css-input" style="text-align: left; width: 80%" disabled>
+                        </div><br />
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<link href="@Url.Content("~/Content/css/TabsSolicitud.css")" rel="stylesheet" />
+<script src="@Url.Content("~/Content/js/Corresponsalia/CreditosVencidos.js")"></script>
+

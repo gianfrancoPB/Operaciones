@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.sSubTitulo = "Reporte Pagos Corresponsalia";
+}
+
+
+<div id="dvContenedorMedio">
+    <div id="dvCuerpoCont" style="height: 826px; margin-left: 10px; width: 1500px;">
+
+        <br />
+
+        <div id="divBusqueda" class="cssBox css-div-form css-div-form-5">
+            <div class="titulo">
+                Filtros de Búsqueda
+                <div class="right">
+                    <input type="button" id="btnBuscar" class="css-boton css-boton-xs css-boton-naranja" onclick="javascript: fn_Buscar();" value="Buscar">
+                    <input type="button" id="btnLimpiar" value="Limpiar" class="css-boton css-boton-xs css-boton-blanco" onclick="javascript: fn_Limpiar()">
+                </div>
+            </div>
+            <div class="css-div-form css-div-form-2">
+                <label>Fecha Inicial:</label><span class="css-txt-oblg">(*)</span><br>
+                <input class="dtdatepicker css-input css-input-calendar" id="txtFechaInicio" name="txtFechaInicio" readonly="readonly" style="width: 40%" type="text" required="">
+            </div>
+
+
+
+            <div class="css-div-form css-div-form-2">
+                <label>Fecha Final:</label><span class="css-txt-oblg">(*)</span><br>
+                <input class="dtdatepicker css-input css-input-calendar" id="txtFechaFin" name="txtFechaFin" readonly="readonly" style="width: 40%" type="text" required="">
+            </div>
+             
+        </div>
+   
+
+        <div id="tabResultado" style="width:100%;">
+            <div id="tabs-1" class="ui-tabs-body ui-widget-content">
+                <div class="cssBox" style="width: 95%">
+                    <div class="titulo">
+                        Resultados de la Búsqueda  <label id="mesBusqueda" style="color:#212121"></label>
+                        <div class="right">
+                            <div id="btnResumen" data-flag="1" style="float: left; cursor: pointer" onclick="javascript: fn_Exportar()">
+                                <div class="btn-excel">EXPORTAR</div>
+
+                                <div style="height: 25px; padding-left: 70px; padding-top: 3px">
+                                    <img src="~/Images/Excel.gif" style="width: 25px; height: 22px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cuerpo cssAlignCenter">
+                        <div class="cuerpo cssAlignCenter" style="overflow-y: auto; max-height: 300px; display: block">
+                            <table id="tblReportePagos" style="width: 95%; margin: auto">
+                                <colgroup>
+                                   
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                </colgroup>
+                                <thead>
+                                    <tr> 
+                                        <th>N#</th>
+                                        <th>DOI</th>
+                                        <th>NombreCliente</th>
+                                        <th>Moneda</th>
+                                        <th>Procesado</th>
+                                        <th>Numero Transaccion</th>
+                                        <th>Fecha Vencimiento</th>
+                                        <th>Asiento Contable</th>
+                                        <th>vNroTicket</th>
+                                        <th>sNumero_Credito</th>
+                                        <th>sRubro_Cuenta</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="10"><small>No existen registros para mostrar.</small></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+ 
+    </div>
+</div>
+
+<link href="~/Content/css/ReporteBase.css" rel="stylesheet" />
+
+<script src="~/Content/js/Reportes/Pago.js"></script>

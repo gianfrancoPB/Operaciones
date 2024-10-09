@@ -1,0 +1,179 @@
+﻿.cabecera_table {
+    background-color: #638799;
+    border-color: white;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    /*font-weight: bold;*/
+    height:20px;
+}
+.circulo{
+	background: #eeeeee;
+    padding: 10px;
+    border-radius: 50%;
+}
+.caja_mireporte {
+	border-radius: 10px;
+    border-top: 10px solid #981e32;
+    padding: 21px;
+    margin-top: 18px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.img-fluid{
+    max-width:100%;
+    height:auto;
+}
+.user_info{
+	display: flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+}
+.user_info .id p{
+	padding-top: 17px;
+}
+.user_info .id p .dni{
+	color: #cccccc;
+}   
+hr{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border:0;
+    border-top:2px solid #ccc;
+}
+#epmLoginTop{
+    background-image: url('../../images/login_back.png'); 
+    background-repeat: repeat-x; 
+    height: 75px; 
+    padding-right: 0px; 
+    padding-left: 0px;
+}
+#epmBottomLeader{
+    background-color:#a5acb0;
+    height:76px;
+}
+#epmTopLogos{
+    height:81px;
+}
+#epmLoginPersonOptionTitle {
+    background-image: url('../../images/ico_leader.png'); 
+    background-repeat: no-repeat; 
+    height: 25px;
+    padding-left: 34px;
+    padding-top:10px;
+    font-family: Verdana;
+    font-size: 15px;
+    background-position: 4px;
+    background-color:#DDDDDD;
+    background-size:12px;
+    text-align: left;
+}
+
+.CajaDescriptivaTable {
+    border-color: #BBD1E8;
+    border-style: solid;
+    border-width: thin;
+    text-align: left;
+    font-size: 11px;
+    height:20px;
+}
+@media screen and (max-width: 768px) {
+	#epmLoginPersonOptionTitle {width: 160px; top: 32px; left: 20px;height: 59px; line-height: 37px; background-position-y: 13px;}	
+}
+.div_texto_cabecera{
+    width:100%;
+    color:#99A0A5;
+    font-size:24px; 
+    font-family:Verdana;
+}
+table, th, td {
+  font-family:Verdana;
+  height:20px;
+  font-size:11px;
+}
+.table_tbody tr:nth-child(odd) {
+  background: #F8FCFF;
+}
+.cuadrorect_cpp {  
+    display:inline-grid;
+    color:#837C7C;
+    font-size:12px;
+    padding:1px;    
+	width: 45px;
+    height: 15px;    
+    text-align:center;
+    background:#A4F742;
+}
+.cuadrorect_nor {
+    display:inline-grid;
+    color:#FFF;
+    font-size:12px;
+    padding:1px;    
+	width: 45px;
+    height: 15px;      
+    text-align:center;
+    background:#3FAD49;
+}
+.cuadrorect_def {
+    display:inline-grid;
+    color:#837C7C;
+    font-size:12px;
+    padding:1px;    
+	width: 45px;
+    height: 15px;      
+    text-align:center;
+    background:#FFFF33;
+}
+.cuadrorect_dud {
+    display:inline-grid;
+    color:#FFF;
+    font-size:12px;
+    padding:1px;    
+	width: 45px;
+    height: 15px;      
+    text-align:center;
+    background:#FF8E33;
+}
+.cuadrorect_per {
+    display:inline-grid;
+    color:#FFF;
+    font-size:12px;
+    padding:1px;    
+	width: 45px;
+    height: 15px;     
+    text-align:center;
+    background:#FF3333;
+}
+.cuadrorect_scal {
+    display:inline-grid;
+    color:#FFF;
+    font-size:12px;
+    padding:1px;    
+	width: 45px;
+    height: 15px;     
+    text-align:center;
+    background:#5F6A72;
+}
+.cuadrorect_vacio {
+    display:inline-grid;
+    color:#000;
+    font-size:12px;
+    padding:1px; 
+    height: 15px;     
+    text-align:left;
+    background:transparent;
+    margin-right:50px;
+}
+.css-input-calendar{
+	background: url(../images/ico-cal.png) no-repeat;
+	padding-right:22px;	
+	background-position: right; 
+}
+.css-input-calendar-des{
+	background: url(../images/ico-cal-des.png) no-repeat;
+	padding-right:22px;	
+	background-position: right; 
+}

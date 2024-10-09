@@ -1,0 +1,81 @@
+﻿@model OperacionesTopazWeb.wsCondicion.EnCondicion
+
+@{
+    ViewBag.sSubTitulo = "Condiciones Detalles";
+}
+
+<form action="@Url.Action("Bandeja")" id="frmVolverBandeja" method="post"></form>
+
+<div id="dv_ibox" class="cssBox" style="width:50%">
+    <div class="titulo">
+        Datos de Tabla
+        <div class="right">
+            <input type="button" class="css-boton css-boton-xs css-boton-blanco" id="btnLimpiar" onclick="javascript: fn_Volver();" value="Volver" />
+        </div>
+    </div>
+    <div class="cuerpo cssAlignLeft">
+        <div class="css-div-form css-div-form-6">
+
+            <div class="css-div-form css-div-form-1">
+                <label>Código:</label>
+            </div>
+            <div class="css-div-form css-div-form-3">
+                <input type="text" maxlength="30" class="css-input" id="txtTabla" value="@Model.iIdCondicion" disabled>
+                <input type="hidden" id="txtiIdCondicion" value="@Model.iIdCondicion" />
+            </div>
+            <br />
+            <div class="css-div-form css-div-form-1">
+                <label>Condición:</label>
+            </div>
+            <div class="css-div-form css-div-form-3">
+                <input type="text" maxlength="150" class="css-input" id="txtSistema" value="@Model.vCondicion" disabled>
+            </div>
+            <br />
+            <div class="css-div-form css-div-form-1">
+                <label>Descripción:</label>
+            </div>
+            <div class="css-div-form css-div-form-3">
+                <input type="text"  class="css-input" id="txtSistema" value="@Model.vDescripcion" disabled>
+            </div>
+            <br/>
+            <div class="css-div-form css-div-form-1">
+                <label>Parámetro:</label>
+            </div>
+            <div class="css-div-form css-div-form-3">
+                <select id="cboParametros" class="css-input-select" title="Seleccione un parámetro" style="width: 100%"></select>                
+            </div>
+            <div class="css-div-form css-div-form-1">
+                <input type="button" class="css-boton css-boton-xs css-boton-naranja" id="btnAgregar" onclick="javascript: fn_AgregarParametro();" value="Agregar" />
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="dv_ibox" class="cssBox" style="width:75%">
+    <div class="titulo">
+        <div class="right">
+            
+        </div>
+        Parámetros Válidos
+    </div>
+    <div class="cuerpo">
+        <table id="tblParametros" class="display dataTable no-footery" width="100%">
+            <colgroup>
+                <col width="5%" />
+                <col width="5%" />                
+                <col width="40%" />                                
+                <col width="5%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>_</th>
+                    <th>Código</th>
+                    <th>Parámetro</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<script src="~/Content/js/Condiciones/detalle1.js"></script>

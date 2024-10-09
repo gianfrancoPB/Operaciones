@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="wsGestion" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/SatelitesEN" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IwsGestion_wsGeneracionDeudaCV_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsGeneracionDeudaCV" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsGeneracionDeudaCV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsGeneracionDeudaCVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsGeneracionDeuda_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsGeneracionDeuda" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsGeneracionDeuda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsGeneracionDeudaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsGeneracionPagos_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsGeneracionPagos" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsGeneracionPagos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsGeneracionPagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsGeneracionPagosCA_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsGeneracionPagosCA" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsGeneracionPagosCA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsGeneracionPagosCAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsObtenerArchivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsObtenerArchivo" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsObtenerArchivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsObtenerArchivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsObtenerPagos_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsObtenerPagos" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsObtenerPagos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsObtenerPagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsObtenerPagosCA_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsObtenerPagosCA" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsObtenerPagosCA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsObtenerPagosCAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsObtenerPagosCV_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsObtenerPagosCV" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsObtenerPagosCV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsObtenerPagosCVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_WsListarPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarPago" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_WsListarPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_WsReporteAfectacionesMasivasCabecera_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsReporteAfectacionesMasivasCabecera" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_WsReporteAfectacionesMasivasCabecera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsReporteAfectacionesMasivasCabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsExportarPagos_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsExportarPagos" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsExportarPagos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsExportarPagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsExportarAfectacionesMasivas_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsExportarAfectacionesMasivas" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsExportarAfectacionesMasivas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsExportarAfectacionesMasivasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsExportarDeudasCA_InputMessage">
+    <wsdl:part name="parameters" element="tns:wsExportarDeudasCA" />
+  </wsdl:message>
+  <wsdl:message name="IwsGestion_wsExportarDeudasCA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:wsExportarDeudasCAResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IwsGestion">
+    <wsdl:operation name="wsGeneracionDeudaCV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsGeneracionDeudaCV" message="tns:IwsGestion_wsGeneracionDeudaCV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsGeneracionDeudaCVResponse" message="tns:IwsGestion_wsGeneracionDeudaCV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsGeneracionDeuda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsGeneracionDeuda" message="tns:IwsGestion_wsGeneracionDeuda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsGeneracionDeudaResponse" message="tns:IwsGestion_wsGeneracionDeuda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsGeneracionPagos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsGeneracionPagos" message="tns:IwsGestion_wsGeneracionPagos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsGeneracionPagosResponse" message="tns:IwsGestion_wsGeneracionPagos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsGeneracionPagosCA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsGeneracionPagosCA" message="tns:IwsGestion_wsGeneracionPagosCA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsGeneracionPagosCAResponse" message="tns:IwsGestion_wsGeneracionPagosCA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsObtenerArchivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsObtenerArchivo" message="tns:IwsGestion_wsObtenerArchivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsObtenerArchivoResponse" message="tns:IwsGestion_wsObtenerArchivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsObtenerPagos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsObtenerPagos" message="tns:IwsGestion_wsObtenerPagos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsObtenerPagosResponse" message="tns:IwsGestion_wsObtenerPagos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsObtenerPagosCA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsObtenerPagosCA" message="tns:IwsGestion_wsObtenerPagosCA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsObtenerPagosCAResponse" message="tns:IwsGestion_wsObtenerPagosCA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsObtenerPagosCV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsObtenerPagosCV" message="tns:IwsGestion_wsObtenerPagosCV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsObtenerPagosCVResponse" message="tns:IwsGestion_wsObtenerPagosCV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsListarPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/WsListarPago" message="tns:IwsGestion_WsListarPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/WsListarPagoResponse" message="tns:IwsGestion_WsListarPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsReporteAfectacionesMasivasCabecera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/WsReporteAfectacionesMasivasCabecera" message="tns:IwsGestion_WsReporteAfectacionesMasivasCabecera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/WsReporteAfectacionesMasivasCabeceraResponse" message="tns:IwsGestion_WsReporteAfectacionesMasivasCabecera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsExportarPagos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsExportarPagos" message="tns:IwsGestion_wsExportarPagos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsExportarPagosResponse" message="tns:IwsGestion_wsExportarPagos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsExportarAfectacionesMasivas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsExportarAfectacionesMasivas" message="tns:IwsGestion_wsExportarAfectacionesMasivas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsExportarAfectacionesMasivasResponse" message="tns:IwsGestion_wsExportarAfectacionesMasivas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="wsExportarDeudasCA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsGestion/wsExportarDeudasCA" message="tns:IwsGestion_wsExportarDeudasCA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsGestion/wsExportarDeudasCAResponse" message="tns:IwsGestion_wsExportarDeudasCA_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IwsGestion" type="tns:IwsGestion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="wsGeneracionDeudaCV">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsGeneracionDeudaCV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsGeneracionDeuda">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsGeneracionDeuda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsGeneracionPagos">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsGeneracionPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsGeneracionPagosCA">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsGeneracionPagosCA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsObtenerArchivo">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsObtenerArchivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsObtenerPagos">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsObtenerPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsObtenerPagosCA">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsObtenerPagosCA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsObtenerPagosCV">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsObtenerPagosCV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsListarPago">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/WsListarPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsReporteAfectacionesMasivasCabecera">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/WsReporteAfectacionesMasivasCabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsExportarPagos">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsExportarPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsExportarAfectacionesMasivas">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsExportarAfectacionesMasivas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsExportarDeudasCA">
+      <soap:operation soapAction="http://tempuri.org/IwsGestion/wsExportarDeudasCA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsGestion">
+    <wsdl:port name="BasicHttpBinding_IwsGestion" binding="tns:BasicHttpBinding_IwsGestion">
+      <soap:address location="http://localhost:8733/OperacionesTopazWS/WsGestion/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

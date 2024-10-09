@@ -1,0 +1,142 @@
+﻿.CajaDescriptiva {
+    border-color: lightgray;
+    border-style: solid;
+    border-width: thin;
+    text-align: left;
+    font-size: smaller;
+}
+
+.Cabeceras {
+    background-color: #BBD1E8;
+    border-color: white;
+    font-size: smaller;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/*Impresion*/
+
+.Evento-Check {
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Evento-Check + .Evento-Check {
+    border-top: 1px solid #f0f2f3;
+}
+
+.lista-tarea-cb {
+    display: none;
+}
+
+.marcar-check {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #c4cbd2;
+    border-radius: 12px;
+}
+
+.marcar-check:before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -6px;
+    height: 4px;
+    width: 8px;
+    border: solid #ef8446;
+    border-width: 0 0 4px 4px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.lista-tarea-cb:checked ~ .marcar-check {
+    border-color: #ef8446;
+}
+
+.lista-tarea-cb:checked ~ .marcar-check:before {
+    display: block;
+}
+
+.lista-tarea-cb:checked ~ .tasks-list-desc {
+    color: #34bf6e;
+    text-decoration: line-through;
+}
+
+.lista-tarea-desc {
+    font-weight: bold;
+    color: #8a9a9b;
+}
+
+.lista-tarea-desc:checked ~ .marcar-check {
+    border-color: #8a9a9b;
+}
+
+.lista-tarea-desc:checked ~ .marcar-check:before {
+    display: block;
+}
+
+.lista-tarea-desc:checked ~ .tasks-list-desc {
+    color: #34bf6e;
+    text-decoration: line-through;
+}
+
+.borde-marcado {
+    -moz-border-radius: 10px;
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: #34bf6e;
+    border-style: solid;
+    background-color: #faf4f0;
+}
+
+/***-------Bloqueado-----*/
+.marcar-check-Bloqueado {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    border: 2px solid lightgray;
+    border-radius: 12px;
+}
+
+.marcar-check-Bloqueado:before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -6px;
+    height: 4px;
+    width: 8px;
+    border: solid lightgray;
+    border-width: 0 0 4px 4px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.lista-tarea-cb:checked ~ .marcar-check-Bloqueado {
+    border-color: lightgray;
+}
+
+.lista-tarea-cb:checked ~ .marcar-check-Bloqueado:before {
+    display: block;
+}

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ccpdiis01.desarrolloti.local/Satelites.Seguridad.WS/SeguridadWS.wsSEA.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SatelitesEN" />
+  <xs:element name="WSValidarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnUsuario" nillable="true" type="q1:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSValidarUsuarioResult" nillable="true" type="q2:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarUsuarioMovil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnUsuario" nillable="true" type="q3:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarUsuarioMovilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSValidarUsuarioMovilResult" nillable="true" type="q4:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSObtenerModuloUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pvalor1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSObtenerModuloUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSObtenerModuloUsuarioResult" nillable="true" type="q5:ArrayOfEnModulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSObtenerMenuModuloUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnUsuario" nillable="true" type="q6:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSObtenerMenuModuloUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSObtenerMenuModuloUsuarioResult" nillable="true" type="q7:ArrayOfEnMenu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarUsuarioMovilAyni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnUsuario" nillable="true" type="q8:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarUsuarioMovilAyniResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSValidarUsuarioMovilAyniResult" nillable="true" type="q9:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarAD_CarteraDigital">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poEnUsuario" nillable="true" type="q10:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarAD_CarteraDigitalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSValidarAD_CarteraDigitalResult" nillable="true" type="q11:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSAutenticacionAD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poUsuario" nillable="true" type="q12:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSAutenticacionADResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSAutenticacionADResult" nillable="true" type="q13:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidacionAD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psNombreUsuario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidacionADResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSValidacionADResult" nillable="true" type="q14:EnUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSAutenticacionWAPI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poUsuarioLoginWAPI" nillable="true" type="q15:EnUsuarioLoginWAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSAutenticacionWAPIResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSAutenticacionWAPIResult" nillable="true" type="q16:EnUsuarioWAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSObtenerUsuarioWAPI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poUsuarioLoginWAPI" nillable="true" type="q17:EnUsuarioLoginWAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSObtenerUsuarioWAPIResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSObtenerUsuarioWAPIResult" nillable="true" type="q18:EnUsuarioWAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSCerrarSesionWAPI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poUsuarioLoginWAPI" nillable="true" type="q19:EnUsuarioLoginWAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSCerrarSesionWAPIResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSCerrarSesionWAPIResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarAccesoMenuId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piIdUsuario" type="xs:int" />
+        <xs:element minOccurs="0" name="piIdMenu" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarAccesoMenuIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSValidarAccesoMenuIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarAccesoMenu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piIdUsuario" type="xs:int" />
+        <xs:element minOccurs="0" name="psMenu" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarAccesoMenuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSValidarAccesoMenuResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarSesionWAPI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poUsuarioLoginWAPI" nillable="true" type="q20:EnUsuarioLoginWAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSValidarSesionWAPIResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WSValidarSesionWAPIResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSDesbloquearUsuarioIntentoFallido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="poBloqueoUsuarioWAPI" nillable="true" type="q21:EnBloqueoUsuarioWAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WSDesbloquearUsuarioIntentoFallidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WSDesbloquearUsuarioIntentoFallidoResult" nillable="true" type="q22:EnBloqueoUsuarioWAPI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

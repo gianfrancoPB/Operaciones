@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="wsCondicion" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.datacontract.org/2004/07/SatelitesEN" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IwsCondicion_WsListarCondiciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarCondiciones" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarCondiciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarCondicionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsObtenerCondicionId_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsObtenerCondicionId" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsObtenerCondicionId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsObtenerCondicionIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarProductoCondicion_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarProductoCondicion" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarProductoCondicion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarProductoCondicionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsMantenerProductoCondicion_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsMantenerProductoCondicion" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsMantenerProductoCondicion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsMantenerProductoCondicionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarCondicionesCreditosVencidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarCondicionesCreditosVencidos" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarCondicionesCreditosVencidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarCondicionesCreditosVencidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarProductoCondicionCreditoVencidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarProductoCondicionCreditoVencidos" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarProductoCondicionCreditoVencidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarProductoCondicionCreditoVencidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarProductoCondicionCreditoVencidosAhorro_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarProductoCondicionCreditoVencidosAhorro" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarProductoCondicionCreditoVencidosAhorro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarProductoCondicionCreditoVencidosAhorroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarProductoCondicionProductoAhorrosOrden_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarProductoCondicionProductoAhorrosOrden" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsListarProductoCondicionProductoAhorrosOrden_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsListarProductoCondicionProductoAhorrosOrdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsMantenerProductoCondicionCreditoVencido_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsMantenerProductoCondicionCreditoVencido" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsMantenerProductoCondicionCreditoVencido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsMantenerProductoCondicionCreditoVencidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsGuardarOrdenProductoAhorro_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsGuardarOrdenProductoAhorro" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsGuardarOrdenProductoAhorro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsGuardarOrdenProductoAhorroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsObtenerCondicionId_CV_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsObtenerCondicionId_CV" />
+  </wsdl:message>
+  <wsdl:message name="IwsCondicion_WsObtenerCondicionId_CV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsObtenerCondicionId_CVResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IwsCondicion">
+    <wsdl:operation name="WsListarCondiciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsListarCondiciones" message="tns:IwsCondicion_WsListarCondiciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsListarCondicionesResponse" message="tns:IwsCondicion_WsListarCondiciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsObtenerCondicionId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsObtenerCondicionId" message="tns:IwsCondicion_WsObtenerCondicionId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsObtenerCondicionIdResponse" message="tns:IwsCondicion_WsObtenerCondicionId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsListarProductoCondicion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsListarProductoCondicion" message="tns:IwsCondicion_WsListarProductoCondicion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsListarProductoCondicionResponse" message="tns:IwsCondicion_WsListarProductoCondicion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsMantenerProductoCondicion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsMantenerProductoCondicion" message="tns:IwsCondicion_WsMantenerProductoCondicion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsMantenerProductoCondicionResponse" message="tns:IwsCondicion_WsMantenerProductoCondicion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsListarCondicionesCreditosVencidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsListarCondicionesCreditosVencidos" message="tns:IwsCondicion_WsListarCondicionesCreditosVencidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsListarCondicionesCreditosVencidosResponse" message="tns:IwsCondicion_WsListarCondicionesCreditosVencidos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsListarProductoCondicionCreditoVencidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsListarProductoCondicionCreditoVencidos" message="tns:IwsCondicion_WsListarProductoCondicionCreditoVencidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsListarProductoCondicionCreditoVencidosResponse" message="tns:IwsCondicion_WsListarProductoCondicionCreditoVencidos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsListarProductoCondicionCreditoVencidosAhorro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsListarProductoCondicionCreditoVencidosAhorro" message="tns:IwsCondicion_WsListarProductoCondicionCreditoVencidosAhorro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsListarProductoCondicionCreditoVencidosAhorroResponse" message="tns:IwsCondicion_WsListarProductoCondicionCreditoVencidosAhorro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsListarProductoCondicionProductoAhorrosOrden">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsListarProductoCondicionProductoAhorrosOrden" message="tns:IwsCondicion_WsListarProductoCondicionProductoAhorrosOrden_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsListarProductoCondicionProductoAhorrosOrdenResponse" message="tns:IwsCondicion_WsListarProductoCondicionProductoAhorrosOrden_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsMantenerProductoCondicionCreditoVencido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsMantenerProductoCondicionCreditoVencido" message="tns:IwsCondicion_WsMantenerProductoCondicionCreditoVencido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsMantenerProductoCondicionCreditoVencidoResponse" message="tns:IwsCondicion_WsMantenerProductoCondicionCreditoVencido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsGuardarOrdenProductoAhorro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsGuardarOrdenProductoAhorro" message="tns:IwsCondicion_WsGuardarOrdenProductoAhorro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsGuardarOrdenProductoAhorroResponse" message="tns:IwsCondicion_WsGuardarOrdenProductoAhorro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsObtenerCondicionId_CV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwsCondicion/WsObtenerCondicionId_CV" message="tns:IwsCondicion_WsObtenerCondicionId_CV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwsCondicion/WsObtenerCondicionId_CVResponse" message="tns:IwsCondicion_WsObtenerCondicionId_CV_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IwsCondicion" type="tns:IwsCondicion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WsListarCondiciones">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsListarCondiciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsObtenerCondicionId">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsObtenerCondicionId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsListarProductoCondicion">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsListarProductoCondicion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsMantenerProductoCondicion">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsMantenerProductoCondicion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsListarCondicionesCreditosVencidos">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsListarCondicionesCreditosVencidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsListarProductoCondicionCreditoVencidos">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsListarProductoCondicionCreditoVencidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsListarProductoCondicionCreditoVencidosAhorro">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsListarProductoCondicionCreditoVencidosAhorro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsListarProductoCondicionProductoAhorrosOrden">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsListarProductoCondicionProductoAhorrosOrden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsMantenerProductoCondicionCreditoVencido">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsMantenerProductoCondicionCreditoVencido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsGuardarOrdenProductoAhorro">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsGuardarOrdenProductoAhorro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsObtenerCondicionId_CV">
+      <soap:operation soapAction="http://tempuri.org/IwsCondicion/WsObtenerCondicionId_CV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsCondicion">
+    <wsdl:port name="BasicHttpBinding_IwsCondicion" binding="tns:BasicHttpBinding_IwsCondicion">
+      <soap:address location="http://localhost:8733/OperacionesTopazWS/wsCondicion/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

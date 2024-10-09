@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/Error.cshtml";
+}
+<input type="hidden" id="hddTipo" value="@ViewData["Tipo"]">
+<center style="margin-top:5%;">
+    <img id="img" src="@ViewBag.vRuta/images/error_page.png" />
+    <br />
+    <h2 style="display:block"><small style="color: #d83f3f;"><span id="texto"></span></small></h2>
+</center>
+
+<script type="text/javascript">
+    var tipo = document.getElementById("hddTipo").value;
+    if (tipo == 1) {
+        document.getElementById("texto").innerHTML = "La página solicitada no se encuentra.";
+        document.getElementById("img").src = "@ViewBag.vRuta/images/config_page.png";
+    } else if (tipo == 2) {
+        document.getElementById("texto").innerHTML = "Algo salió mal, comuníquese con su administrador.";
+        document.getElementById("img").src = "@ViewBag.vRuta/images/error_page.png";
+    } else if (tipo == 999) {
+        document.getElementById("texto").innerHTML = "No tiene permisos para ingresar a la opción solicitada.";
+        document.getElementById("img").src = "@ViewBag.vRuta/images/access_page.png";
+    } else {
+        document.getElementById("texto").innerHTML = "Ocurrió un problema al invocar la acción.";
+        document.getElementById("img").src = "@ViewBag.vRuta/images/error_page.png";
+    }
+</script>

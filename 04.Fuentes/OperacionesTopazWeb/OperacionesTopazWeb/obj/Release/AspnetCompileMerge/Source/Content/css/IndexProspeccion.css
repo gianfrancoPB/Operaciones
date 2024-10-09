@@ -1,0 +1,44 @@
+﻿
+.locked 
+{
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+@@media screen and (max-width: 1200px) 
+{
+    #dvAgregar {
+        height: auto;
+    }
+
+    #dvAgregarB {
+        height: auto;
+    }
+
+    #dvResultado {
+        height: auto;
+    }
+
+    #dvResultadoB {
+        height: auto;
+    }
+}
+
+@@media screen and (min-width: 1200px) 
+{
+    #dvAgregar {
+        height: 240px;
+    }
+
+    #dvAgregarB {
+        height: 192px;
+    }
+
+    #dvResultado {
+        height: 240px;
+    }
+
+    #dvResultadoB {
+        height: 192px;
+    }
+}

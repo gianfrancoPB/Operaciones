@@ -1,0 +1,79 @@
+﻿ul.ui-widget-header {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c0c0c0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.ui-tabs-nav .ui-state-default {
+    background: transparent;
+    border: none;
+}
+
+.ui-tabs-nav .ui-state-active {
+    background: transparent url(../../images/uiTabsArrow.png) no-repeat bottom center;
+    border: none;
+}
+
+.ui-tabs-nav .ui-state-default a {
+    color: #666;
+}
+
+.ui-tabs-nav .ui-state-active a {
+    color: #FC9936;
+    font-weight: bold;
+}
+
+/**/
+.css-input-datatable:disabled {
+    border: 0;
+    background: transparent;
+}
+
+.css-input-datatable-activo {
+    width: 80%;
+}
+
+/**/
+
+li a {
+    outline-color: transparent;
+}
+
+div.controls {
+    display: none;
+}
+
+#tabs-solicitud {
+    background: transparent;
+    border: none;
+
+}
+
+.css-input[readonly] {
+    font-family: "open sans";
+    font-size: 11px;
+    color: #676a6c;
+}
+
+fieldset {
+    width: 95%;
+}
+
+.stopwatch {
+    display: none;
+}
+
+#dvCuerpoCont {
+    padding-top: 0px;
+}
+
+.css-fieldset-1335 {
+    width: 70%;
+}
+
+.css-fieldset-1050 {
+    width: 100%;
+}

@@ -1,0 +1,90 @@
+<publishData>
+  <publishTarget publishUrl="C:\Users\gpadillab\Desktop\LocalPubish\OperacionesTopaz.WS\">
+    <file relUrl="bin/OperacionesTopazAD.dll" publishTime="10/03/2024 12:30:22" />
+    <file relUrl="bin/SatelitesEN.dll" publishTime="10/03/2024 12:30:22" />
+    <file relUrl="bin/OperacionesTopazWS.dll.config" publishTime="10/02/2024 14:37:05" />
+    <file relUrl="bin/SecurityCrk.dll" publishTime="05/03/2023 17:31:51" />
+    <file relUrl="bin/OperacionesTopazRN.pdb" publishTime="10/03/2024 12:30:22" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="03/08/2023 02:05:50" />
+    <file relUrl="bin/SatelitesEN.pdb" publishTime="10/03/2024 12:30:22" />
+    <file relUrl="OperacionesTopazWS.wsGestion.svc" publishTime="10/03/2024 14:16:41" />
+    <file relUrl="bin/OperacionesTopazRN.dll.config" publishTime="10/02/2024 14:37:05" />
+    <file relUrl="bin/NPOI.dll" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/SeguridadCrkWCF.dll" publishTime="05/03/2023 17:31:51" />
+    <file relUrl="bin/OperacionesTopazWS.pdb" publishTime="10/03/2024 14:16:26" />
+    <file relUrl="bin/OperacionesTopazRN.dll" publishTime="10/03/2024 12:30:22" />
+    <file relUrl="bin/NPOI.xml" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/OperacionesTopazWS.dll" publishTime="10/03/2024 14:16:26" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="03/08/2023 02:09:56" />
+    <file relUrl="bin/OperacionesTopazAD.pdb" publishTime="10/03/2024 12:30:22" />
+    <file relUrl="bin/UtilitarioCrk.dll" publishTime="10/16/2023 16:58:55" />
+    <file relUrl="Web.config" publishTime="10/02/2024 14:37:05" />
+    <file relUrl="bin/EPPlus.dll" publishTime="05/03/2023 17:31:51" />
+    <file relUrl="bin/NPOI.pdb" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="OperacionesTopazWS.wsCondicion.svc" publishTime="10/03/2024 14:16:41" />
+  </publishTarget>
+  <publishTarget publishUrl="\\10.10.113.178\c$\inetpub\wwwroot\Satelites.ResectorizacionTopaz.WS\">
+    <file relUrl="bin/OperacionesTopazAD.dll" publishTime="03/13/2024 11:48:40" />
+    <file relUrl="bin/SatelitesEN.dll" publishTime="03/13/2024 11:48:40" />
+    <file relUrl="bin/OperacionesTopazWS.dll.config" publishTime="02/08/2024 17:35:43" />
+    <file relUrl="bin/SecurityCrk.dll" publishTime="05/03/2023 17:31:51" />
+    <file relUrl="bin/OperacionesTopazRN.pdb" publishTime="03/13/2024 11:48:41" />
+    <file relUrl="bin/SatelitesEN.pdb" publishTime="03/13/2024 11:48:40" />
+    <file relUrl="OperacionesTopazWS.wsGestion.svc" publishTime="03/13/2024 11:48:46" />
+    <file relUrl="bin/NPOI.dll" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/NPOI.pdb" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/OperacionesTopazRN.dll" publishTime="03/13/2024 11:48:41" />
+    <file relUrl="bin/NPOI.xml" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/OperacionesTopazAD.pdb" publishTime="03/13/2024 11:48:40" />
+    <file relUrl="bin/OperacionesTopazWS.dll" publishTime="03/13/2024 11:48:41" />
+    <file relUrl="bin/SeguridadCrkWCF.dll" publishTime="05/03/2023 17:31:51" />
+    <file relUrl="Web.config" publishTime="02/08/2024 17:35:43" />
+    <file relUrl="bin/UtilitarioCrk.dll" publishTime="10/16/2023 16:58:55" />
+    <file relUrl="bin/EPPlus.dll" publishTime="05/03/2023 17:31:51" />
+    <file relUrl="bin/OperacionesTopazWS.pdb" publishTime="03/13/2024 11:48:41" />
+    <file relUrl="OperacionesTopazWS.wsCondicion.svc" publishTime="03/13/2024 11:48:46" />
+  </publishTarget>
+  <publishTarget publishUrl="C:\Users\gpadillab\Desktop\lcl\Satelites.OperacionesTopaz.WS\">
+    <file relUrl="bin/OperacionesTopazAD.dll" publishTime="02/08/2024 17:36:08" />
+    <file relUrl="bin/SatelitesEN.dll" publishTime="02/08/2024 17:36:08" />
+    <file relUrl="bin/OperacionesTopazWS.dll.config" publishTime="02/08/2024 17:35:43" />
+    <file relUrl="bin/SecurityCrk.dll" publishTime="05/03/2023 17:31:51" />
+    <file relUrl="bin/OperacionesTopazRN.pdb" publishTime="02/08/2024 17:36:09" />
+    <file relUrl="bin/SatelitesEN.pdb" publishTime="02/08/2024 17:36:08" />
+    <file relUrl="OperacionesTopazWS.wsGestion.svc" publishTime="02/08/2024 17:36:19" />
+    <file relUrl="bin/NPOI.dll" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/SeguridadCrkWCF.dll" publishTime="05/03/2023 17:31:51" />
+    <file relUrl="bin/OperacionesTopazWS.pdb" publishTime="02/08/2024 17:36:09" />
+    <file relUrl="bin/OperacionesTopazRN.dll" publishTime="02/08/2024 17:36:09" />
+    <file relUrl="bin/NPOI.xml" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/OperacionesTopazWS.dll" publishTime="02/08/2024 17:36:09" />
+    <file relUrl="bin/OperacionesTopazAD.pdb" publishTime="02/08/2024 17:36:08" />
+    <file relUrl="bin/UtilitarioCrk.dll" publishTime="05/03/2023 17:31:52" />
+    <file relUrl="Web.config" publishTime="02/08/2024 17:35:43" />
+    <file relUrl="bin/EPPlus.dll" publishTime="05/03/2023 17:31:51" />
+    <file relUrl="bin/NPOI.pdb" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="OperacionesTopazWS.wsCondicion.svc" publishTime="02/08/2024 17:36:19" />
+  </publishTarget>
+  <publishTarget publishUrl="C:\Users\cstjdenegri\Desktop\Desarrollo\OperacionesTopazWS\">
+    <file relUrl="bin/OperacionesTopazAD.dll" publishTime="11/14/2023 15:22:52" />
+    <file relUrl="bin/SatelitesEN.dll" publishTime="11/14/2023 15:22:52" />
+    <file relUrl="bin/OperacionesTopazWS.dll.config" publishTime="11/13/2023 10:56:22" />
+    <file relUrl="bin/SecurityCrk.dll" publishTime="10/16/2023 16:58:55" />
+    <file relUrl="bin/OperacionesTopazRN.pdb" publishTime="11/14/2023 15:22:53" />
+    <file relUrl="bin/SatelitesEN.pdb" publishTime="11/14/2023 15:22:52" />
+    <file relUrl="OperacionesTopazWS.wsGestion.svc" publishTime="11/14/2023 15:22:56" />
+    <file relUrl="bin/NPOI.dll" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/NPOI.pdb" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/OperacionesTopazRN.dll" publishTime="11/14/2023 15:22:53" />
+    <file relUrl="bin/NPOI.xml" publishTime="10/16/2023 16:59:42" />
+    <file relUrl="bin/OperacionesTopazAD.pdb" publishTime="11/14/2023 15:22:52" />
+    <file relUrl="bin/OperacionesTopazWS.dll" publishTime="11/14/2023 15:22:53" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="04/07/2022 10:04:22" />
+    <file relUrl="bin/SeguridadCrkWCF.dll" publishTime="10/16/2023 16:58:56" />
+    <file relUrl="Web.config" publishTime="11/13/2023 10:56:22" />
+    <file relUrl="bin/UtilitarioCrk.dll" publishTime="10/16/2023 16:58:55" />
+    <file relUrl="bin/EPPlus.dll" publishTime="10/16/2023 16:58:55" />
+    <file relUrl="bin/OperacionesTopazWS.pdb" publishTime="11/14/2023 15:22:53" />
+    <file relUrl="OperacionesTopazWS.wsCondicion.svc" publishTime="11/14/2023 15:22:56" />
+  </publishTarget>
+</publishData>

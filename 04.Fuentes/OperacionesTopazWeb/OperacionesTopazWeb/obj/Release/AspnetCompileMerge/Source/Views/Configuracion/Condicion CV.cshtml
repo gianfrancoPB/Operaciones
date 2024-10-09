@@ -1,0 +1,120 @@
+﻿@model OperacionesTopazWeb.wsCondicion.EnCondicion
+
+@{
+    ViewBag.sSubTitulo = "Condiciones Creditos Vencidos";
+}
+
+
+
+<div id="dv_ibox" class="cssBox" style="width:50%">
+    <div class="titulo">
+        Datos de Tabla UWU
+        <div class="right">
+            <input type="button" class="css-boton css-boton-md css-boton-verde"     id="btnGuardar"     onclick="javascript: fn_GuardarProducto();" value="Grabar"/>
+            <input type="button" class="css-boton css-boton-md css-boton-blanco"    id="btnLimpiar"     onclick="javascript: fn_Volver();" value="Volver"/>
+        </div>
+    </div>
+    <div class="cuerpo cssAlignLeft">
+        <div class="css-div-form css-div-form-6">
+
+            <div class="css-div-form css-div-form-2">
+                <label>Código:</label>
+            </div>
+            <div class="css-div-form css-div-form-3">
+                <input type="text" maxlength="30" class="css-input" id="txtTabla" value="@Model.iIdCondicion" disabled>
+                <input type="hidden" id="siCodigoTabla" value="@Model.iIdCondicion" />
+            </div>
+            <br />
+            <div class="css-div-form css-div-form-2">
+                <label>Condición:</label>
+            </div>
+            <div class="css-div-form css-div-form-3">
+                <input type="text" maxlength="30" class="css-input" id="txtSistema" value="@Model.vCondicion" disabled>
+            </div>
+            <br />
+            <div class="css-div-form css-div-form-2">
+                <label>Descripción:</label>
+            </div>
+            <div class="css-div-form css-div-form-3">
+                <input type="text" maxlength="30" class="css-input" id="txtDescripción" value="@Model.vDescripcion" disabled>
+            </div>
+      
+
+        </div>
+    </div>
+</div>
+<div id="dv_ibox" class="cssBox" style="width:75%">
+    
+
+    <div class="cssAlignLeft cssBox css-div-form css-div-form-6">
+
+        <table style="width: 95%; margin:auto">
+            <tr>
+                <td style="width:40%">
+                    @*<fieldset>
+                        <legend>Productos Disponibles Uwu</legend>
+                        <div id="dvScroll" style="overflow-y:auto; height: 300px">
+
+                            <table id="header-fixed"></table>
+                            <table id="tblProductoCredito" class="display dataTable no-footer" width="100%">
+                                <colgroup>
+                                    <col width="1%" />
+                                    <col width="5%" />
+                                    <col width="10%" />
+                                    <col width="4%" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="chkTodosDis" class="css_campos_datatable" /></th>
+                                    <th>Código Raiz</th>
+                                    <th>Producto</th>
+                                    <th>Código</th>
+                                </tr>
+                                </thead>
+                                <tfoot>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <span id="spnDisponibles" style="color:rgb(128,128,128); font-size:x-small; margin-top:10px"></span>
+                    </fieldset>*@
+                </td>
+                @*<td style="width:10%">
+                    <div style="text-align:center">
+                        <input type="button" value="►" class="css-boton css-boton-md css-boton-verde" onclick="javascript: fnAsignar();" />
+                        <br /><br />
+                        <input type="button" value="◄" class="css-boton css-boton-md css-boton-rojo" onclick="javascript: fnDesasignar();" />
+                    </div>
+                </td>*@
+                <td style="width:40%">
+                    @*<fieldset>
+                        <legend>Productos aptos para corresponsalia BCP</legend>
+                        <div style="overflow-y:auto; height: 300px">
+                            <table id="tblReglasProds" class="display dataTable no-footer" width="100%">
+                                <colgroup>
+                                    <col width="5%" />
+                                    <col width="5%" />
+                                    <col width="20%" />
+                                    <col width="15%" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="chkTodosCar" /></th>
+                                    <th>Código Raiz</th>
+                                    <th>Producto</th>
+                                    <th>Código</th>
+                                </tr>
+                                </thead>
+                                <tbody></tbody>
+                                <tfoot></tfoot>
+                            </table>
+                        </div>
+                        <span id="spnCartera" style="color: rgb(128,128,128); font-size: x-small; margin-top: 10px"></span>
+                    </fieldset>*@
+                </td>
+            </tr>
+        </table>
+            
+    </div>    
+</div>
+<form action="@Url.Action("Bandeja")" method="post" id="frmBandejaCon"></form>
+<script src="~/Content/js/Condiciones/detalle2.js"></script>

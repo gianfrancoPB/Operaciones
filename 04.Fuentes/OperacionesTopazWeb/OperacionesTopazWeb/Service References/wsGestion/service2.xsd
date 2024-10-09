@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/SatelitesEN" />
+  <xs:element name="wsGeneracionDeudaCV">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="Parametros" nillable="true" type="q1:EnCorresponsaliaParametros" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsGeneracionDeudaCVResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="wsGeneracionDeudaCVResult" nillable="true" type="q2:EnCorresponsalia" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsGeneracionDeuda">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="Parametros" nillable="true" type="q3:EnCorresponsaliaParametros" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsGeneracionDeudaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="wsGeneracionDeudaResult" nillable="true" type="q4:EnCorresponsalia" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsGeneracionPagos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vRuta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vNombre" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="Parametros" nillable="true" type="q5:EnCorresponsaliaParametros" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsGeneracionPagosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="wsGeneracionPagosResult" nillable="true" type="q6:EnCorresponsalia" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsGeneracionPagosCA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vRuta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vNombre" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="Parametros" nillable="true" type="q7:EnCorresponsaliaParametros" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsGeneracionPagosCAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="wsGeneracionPagosCAResult" nillable="true" type="q8:EnCorresponsalia" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsObtenerArchivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="piFlag" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsObtenerArchivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="wsObtenerArchivoResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsObtenerPagos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsObtenerPagosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="wsObtenerPagosResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsObtenerPagosCA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iIdPagosCA" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsObtenerPagosCAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="wsObtenerPagosCAResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsObtenerPagosCV">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsObtenerPagosCVResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="wsObtenerPagosCVResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarPago">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="Parametros" nillable="true" type="q9:EnCorresponsaliaParametros" />
+        <xs:element minOccurs="0" name="fechaInicio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaFin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsListarPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsListarPagoResult" nillable="true" type="q10:ArrayOfEnCorresponsaliaDescargarPagos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsReporteAfectacionesMasivasCabecera">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="oParametros" nillable="true" type="q11:EnAfectacionesMasivasReporteCabecera" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WsReporteAfectacionesMasivasCabeceraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="WsReporteAfectacionesMasivasCabeceraResult" nillable="true" type="q12:ArrayOfEnAfectacionesMasivasReporteCabecera" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsExportarPagos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsExportarPagosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="wsExportarPagosResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsExportarAfectacionesMasivas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="oParametros" nillable="true" type="q13:EnAfectacionesMasivasReporteCabecera" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsExportarAfectacionesMasivasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="wsExportarAfectacionesMasivasResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsExportarDeudasCA">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wsExportarDeudasCAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/SatelitesEN" minOccurs="0" name="wsExportarDeudasCAResult" nillable="true" type="q14:EnExportarDeudasCA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

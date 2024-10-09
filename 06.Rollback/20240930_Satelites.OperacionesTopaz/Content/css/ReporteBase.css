@@ -1,0 +1,99 @@
+﻿.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #59606C;
+    text-decoration: none;
+    font-family: "open sans bold";
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border: none;
+    border-left: 2px solid #FC8104;
+    border-top: 2px solid #FC8104;
+    background: #EEEEEE;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+table thead tr th {
+    color: white;
+    background-color: #fc8104;
+    border: white 1px solid;
+}
+
+table {
+    margin: 0px;
+    clear: both;
+    border-spacing: 0;
+    border-width: 1px;
+    border-color: #e2e2e2; 
+    border-style: solid;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    max-height: 300px;
+}
+
+table tbody tr td {
+    padding: 4px;
+    border: 1px solid #e2e2e2;
+}
+
+table tr:first-child th {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child,
+table tr th:last-child {
+    border-right: 0;
+}
+
+table thead tr {
+    height: 30px;
+}
+
+/*table tbody tr {
+    height: 20px;
+}*/
+
+.css-div-form-1 {
+    width: 100px;
+}
+
+.btn-excel {
+    border: 1px solid #1E7145;
+    width: auto;
+    height: 20px;
+    margin-top: 3px;
+    text-align: center;
+    color: #1E7145;
+    font-size: 0.8em;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    position: absolute;
+    background-color: white;
+    line-height: 20px;
+}
+
+.btn-grafico {
+    border: 1px solid #fc8104;
+    width: auto;
+    height: 20px;
+    margin-top: 3px;
+    text-align: center;
+    color: #fc8104;
+    font-size: 0.8em;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    position: absolute;
+    background-color: white;
+    line-height: 20px;
+}

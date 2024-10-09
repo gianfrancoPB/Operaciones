@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SatelitesEN" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SatelitesEN" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EnUsuario">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:enBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoEstadoUsuario" type="xs:int" />
+          <xs:element minOccurs="0" name="IdCargo" type="xs:int" />
+          <xs:element minOccurs="0" name="IdCargoSecundario" type="xs:int" />
+          <xs:element minOccurs="0" name="IdUsuario" type="xs:int" />
+          <xs:element minOccurs="0" name="NombreCargo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="bAccecsoMovil" type="xs:boolean" />
+          <xs:element minOccurs="0" name="bAcceso" type="xs:boolean" />
+          <xs:element minOccurs="0" name="bEstadoAD" type="xs:boolean" />
+          <xs:element minOccurs="0" name="iCodigoEmpleado" type="xs:int" />
+          <xs:element minOccurs="0" name="iEntidad" type="xs:int" />
+          <xs:element minOccurs="0" name="iFlag" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdPerfil" type="xs:int" />
+          <xs:element minOccurs="0" name="iRespuesta" type="xs:int" />
+          <xs:element minOccurs="0" name="iTipoEquipo" type="xs:int" />
+          <xs:element minOccurs="0" name="iidOficina" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="iidUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sApellidos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sCodigoEstadoUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sCodigoIP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sCodigoMAC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sCodigoSectorista" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sContrasena" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sCorreo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sMensajeLogin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombreCargo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombreCompleto" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombreEstado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombreOficina" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombrePerfil" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombreUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombreUsuarioCreacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombres" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNumeroDNI" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNumeroTelefono" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sOpcionesMenu" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sPerfilPrimario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sRespuesta" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sSesionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sTipoGestion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sUsuarioNombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sValidacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="siArea" type="xs:int" />
+          <xs:element minOccurs="0" name="siOrigen" type="xs:short" />
+          <xs:element minOccurs="0" name="siTipoGestion" type="xs:short" />
+          <xs:element minOccurs="0" name="siValidarAccesoMovil" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vCorreo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EnUsuario" nillable="true" type="tns:EnUsuario" />
+  <xs:complexType name="enBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AjaxError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AjaxResultado" type="xs:int" />
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroPagina" type="xs:int" />
+      <xs:element minOccurs="0" name="NumeroRegistros" type="xs:int" />
+      <xs:element minOccurs="0" name="RowNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="Tipo" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalRegistros" type="xs:int" />
+      <xs:element minOccurs="0" name="dtAudFechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dtAudFechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="enResultadoTopaz" nillable="true" type="tns:EnServiceResult" />
+      <xs:element minOccurs="0" name="iIdOficinaModificacion" type="xs:int" />
+      <xs:element minOccurs="0" name="vAudFechaCreacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vAudFechaModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vAudIPCreacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vAudIPModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vAudMACCreacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vAudMACModificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vAudNombreUsuarioCreacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vAudNombreUsuarioModificacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="enBase" nillable="true" type="tns:enBase" />
+  <xs:complexType name="EnServiceResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EstadoRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="bResultado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="iId" type="xs:int" />
+      <xs:element minOccurs="0" name="iModulo" type="xs:int" />
+      <xs:element minOccurs="0" name="iResultado" type="xs:int" />
+      <xs:element minOccurs="0" name="sCodigoErrorTopaz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sContentXmlError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sMensajeErrorTopaz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sModulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EnServiceResult" nillable="true" type="tns:EnServiceResult" />
+  <xs:complexType name="ArrayOfEnUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EnUsuario" nillable="true" type="tns:EnUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEnUsuario" nillable="true" type="tns:ArrayOfEnUsuario" />
+  <xs:complexType name="ArrayOfEnPerfil">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EnPerfil" nillable="true" type="tns:EnPerfil" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEnPerfil" nillable="true" type="tns:ArrayOfEnPerfil" />
+  <xs:complexType name="EnPerfil">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:enBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Codigo_Equivalencia" type="xs:int" />
+          <xs:element minOccurs="0" name="Descripcion_Equivalencia" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdMVLPerfilOpcion" type="xs:int" />
+          <xs:element minOccurs="0" name="bEliminado" type="xs:boolean" />
+          <xs:element minOccurs="0" name="bPrincipal" type="xs:boolean" />
+          <xs:element minOccurs="0" name="bProgramado" type="xs:boolean" />
+          <xs:element minOccurs="0" name="bRegistroBD" type="xs:boolean" />
+          <xs:element minOccurs="0" name="bSinFechaFin" type="xs:boolean" />
+          <xs:element minOccurs="0" name="dtFechaFinalAsignacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dtFechaInicioAsignacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="iCantidadCargos" type="xs:int" />
+          <xs:element minOccurs="0" name="iCargoAsociado" type="xs:int" />
+          <xs:element minOccurs="0" name="iCodigoEstado" type="xs:int" />
+          <xs:element minOccurs="0" name="iCodigoNivel" type="xs:int" />
+          <xs:element minOccurs="0" name="iContador" type="xs:int" />
+          <xs:element minOccurs="0" name="iFlagDML" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdCargo" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdMVLPerfil" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdMvlOpcion" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdMvlOpcionPadre" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdPerfil" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdUsuario" type="xs:int" />
+          <xs:element minOccurs="0" name="sCargoAsociado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sEquivalencia" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sFechaAsociacionCargo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sMotivo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombrePerfil" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sPerfilPrimario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="siEstado" type="xs:int" />
+          <xs:element minOccurs="0" name="siMotivo" type="xs:short" />
+          <xs:element minOccurs="0" name="vFechaRegistro" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vNombreObjeto" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vNombreOpcion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EnPerfil" nillable="true" type="tns:EnPerfil" />
+  <xs:complexType name="ArrayOfEnOficina">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EnOficina" nillable="true" type="tns:EnOficina" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEnOficina" nillable="true" type="tns:ArrayOfEnOficina" />
+  <xs:complexType name="EnOficina">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:enBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IdVtipo" type="xs:int" />
+          <xs:element minOccurs="0" name="NombreEstado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="bEliminado" type="xs:boolean" />
+          <xs:element minOccurs="0" name="bPrincipal" type="xs:boolean" />
+          <xs:element minOccurs="0" name="bRegistroBD" type="xs:boolean" />
+          <xs:element minOccurs="0" name="dtFechaFin" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="dtFechaInicio" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="iConsultasRepetidas" type="xs:int" />
+          <xs:element minOccurs="0" name="iConsultasTotales" type="xs:int" />
+          <xs:element minOccurs="0" name="iConsultasUnicas" type="xs:int" />
+          <xs:element minOccurs="0" name="iFlagDML" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdOficina" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdRegion" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdUsuario" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdZona" type="xs:int" />
+          <xs:element minOccurs="0" name="iTipoOficina" type="xs:int" />
+          <xs:element minOccurs="0" name="sCargo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sCodigoAgencia" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sCodigoSunat" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sCodigoUbigeo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sDescripcionUbigeo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sFechaConsulta" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sIdOficina" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombreOficina" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombreRegion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombreUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNombre_Zona" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sNumeroDocumento" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sOficinaPrincipal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sTipoOficina" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sTipoZona" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="siEstado" type="xs:int" />
+          <xs:element minOccurs="0" name="vAnexo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vDireccion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vEquivalencia" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vTelefono" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EnOficina" nillable="true" type="tns:EnOficina" />
+  <xs:complexType name="EnBloqueoUsuario">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:enBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bEliminado" type="xs:boolean" />
+          <xs:element minOccurs="0" name="bProgramado" type="xs:boolean" />
+          <xs:element minOccurs="0" name="iEstado" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdBloqueoUsuario" type="xs:int" />
+          <xs:element minOccurs="0" name="iIdUsuario" type="xs:int" />
+          <xs:element minOccurs="0" name="iSubTipoBloqueo" type="xs:int" />
+          <xs:element minOccurs="0" name="iTipoBloqueo" type="xs:int" />
+          <xs:element minOccurs="0" name="sCodigoUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sComentario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sFechaFinal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sFechaInicio" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EnBloqueoUsuario" nillable="true" type="tns:EnBloqueoUsuario" />
+</xs:schema>
